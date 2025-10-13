@@ -1,0 +1,660 @@
+:root {
+    /* تم روشن (Light Mode) */
+    --color-primary: #0E2050;
+    --color-blue80: #7D87A1;
+    --color-gray: #DADDE4;
+    --color-white: #fff;
+    --color-background: #F6F8FE;
+    --color-brown: #C99B37;
+    --color-lightbrown: #DFC388;
+}
+
+[data-theme="dark"] {
+    /* تم تاریک (Dark Mode) */
+   --color-primary: #0E2050;
+    --color-blue80: #7D87A1;
+    --color-gray: #DADDE4;
+    --color-white: #fff;
+    --color-background: #F6F8FE;
+    --color-brown: #C99B37;
+    --color-lightbrown: #DFC388;
+}
+
+@font-face {
+    font-family: 'IRANSansX-Regular';
+    font-weight: 400;
+    src: url('../fonts/woff/IRANSansXFaNum-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IRANSansX-Medium';
+    font-weight: 500;
+    src: url('../fonts/woff/IRANSansXFaNum-DemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IRANSansX-semiBold';
+    font-weight: 600;
+    src: url('../fonts/woff/IRANSansXFaNum-DemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IRANSansX-Bold';
+    font-weight: 700;
+    src: url('../fonts/woff/IRANSansXFaNum-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IRANSansX-ExtraBold';
+    font-weight: 800;
+    src: url('../fonts/woff/IRANSansXFaNum-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IRANSansX-Black';
+    font-weight: 900;
+    src: url('../fonts/woff/IRANSansXFaNum-Black.woff') format('woff');
+}
+
+body {
+    font-family: 'IRANSansX-Regular';
+    user-select: none;
+    overflow-x: hidden;
+    background-color: var(--color-background);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.fw-Medium {
+    font-family: 'IRANSansX-Medium' !important;
+    font-weight: 500;
+}
+
+.fw-semiBold {
+    font-family: 'IRANSansX-semiBold' !important;
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-family: 'IRANSansX-Bold';
+    font-weight: 700;
+}
+
+.transition {
+    transition: all .4s;
+}
+
+/* max-width */
+.max-w-241 {
+    max-width: 241px;
+    width: 100%;
+}
+
+/* font size */
+.fs-8 {
+    font-size: 8px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+.fs-60 {
+    font-size: 60px !important;
+}
+
+/* cursor */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* gap */
+
+.gap-6 {
+    gap: 6px;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.gap-44 {
+    gap: 44px;
+}
+
+/* width */
+.w-18 {
+    width: 18px;
+}
+.w-24 {
+    width: 24px;
+}
+
+.w-32 {
+    width: 32px !important;
+}
+
+.w-40 {
+    width: 40px;
+}
+
+.w-76 {
+    width: 76px;
+}
+
+.w-122 {
+    width: 122px;
+}
+
+.w-244 {
+    width: 244px;
+}
+
+/* height */
+.h-18 {
+    height: 18px;
+}
+.h-24 {
+    height: 24px;
+}
+
+.h-32 {
+    height: 32px !important;
+}
+
+.h-40 {
+    height: 40px;
+}
+.h-88-5{
+    height:88.5vh;
+}
+
+/* z index */
+.z-0 {
+    z-index: 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.z-30 {
+    z-index: 30;
+}
+
+/* padding */
+.py-10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.p-12{
+    padding: 12px !important;
+}
+
+.px-12 {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.py-15 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.py-20 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.px-28 {
+    padding-right: 28px;
+    padding-left: 28px;
+}
+
+.py-40 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+/* margin */
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* flex */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* text align */
+.text-justify {
+    text-align: justify;
+}
+
+/* text color */
+.text-main {
+    color: var(--color-primary);
+}
+
+.text-blue80 {
+    color: var(--color-blue80);
+}
+
+/* left */
+.-left-8 {
+    left: -8px;
+}
+.left-25 {
+    left: 25px;
+}
+
+/* right */
+.right-4 {
+    right: 4px;
+}
+
+/* top */
+.-top-4 {
+    top: -4px;
+}
+.-top-6 {
+    top: -6px;
+}
+
+/* bottom */
+.-bottom-96 {
+    bottom: -96px;
+}
+
+/* position */
+.position-stisky {
+    position: sticky;
+}
+
+/* line height */
+.lh-20 {
+    line-height: 20px;
+}
+
+/* resize */
+.resize-none {
+    resize: none;
+}
+
+.appearance-none {
+    appearance: none;
+}
+
+/* border */
+.border-main {
+    border: 1px solid var(--color-primary);
+}
+
+.border-gray {
+    border: 1px solid var(--color-gray);
+}
+
+.border-b-gray {
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.border-l-gray {
+    border-left: 1px solid var(--color-gray);
+}
+
+.border-gray-2 {
+    border: 2px solid var(--color-gray);
+}
+
+.border-brown {
+    border: 1px solid var(--color-brown);
+}
+
+/* background */
+.bg-main {
+    background-color: var(--color-primary);
+}
+.bg-white {
+    background-color: var(--color-white) !important;
+}
+
+.bg-background {
+    background-color: var(--color-background);
+}
+
+.bg-lightbrown {
+    background-color: var(--color-lightbrown);
+}
+
+.bg-gradient-1 {
+    background: linear-gradient(0deg, #B5BAC9, #B5BAC9),
+        linear-gradient(0deg, #E5E8F3, #E5E8F3);
+}
+
+/* box shadow */
+.shadow-1 {
+    box-shadow: 0px 0px 15px 0px #0000001C;
+}
+
+/* border radius */
+.rounded-4 {
+    border-radius: 4px;
+}
+.rounded-6 {
+    border-radius: 6px;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+}
+
+.rounded-12 {
+    border-radius: 12px;
+}
+
+.rounded-16 {
+    border-radius: 16px;
+}
+
+/* outline-none */
+.outline-none {
+    outline: none;
+}
+
+/* opacity */
+.opacity-none {
+    opacity: 0;
+}
+
+/* scroll */
+.hiddenScroll::-webkit-scrollbar {
+    width: 1px;
+    /* Width of the scrollbar */
+    height: 1px;
+    /* Height for horizontal scrollbar */
+}
+
+/* The scrollbar track */
+.hiddenScroll::-webkit-scrollbar-track {
+    background: transparent;
+    /* Light gray background */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* The scrollbar thumb (the draggable part) */
+.hiddenScroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #eaeff7, transparent);
+    /* Gradient effect */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 3px solid transparent;
+    /* Space around the thumb */
+}
+
+/* The scrollbar thumb on hover */
+.hiddenScroll::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #eaeff7, transparent);
+    /* Darker gradient on hover */
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+    scrollbar-color: #eaeff7 transparent;
+    /* Thumb and track colors */
+}
+
+/* input number */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+/* sidebar */
+#sidebar {
+    height: 88.5vh;
+    overflow: auto;
+}
+
+#sidebar a:hover,
+#sidebar a.active {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+#sidebar a svg:first-child {
+    transition: all .4s;
+    opacity: 100%;
+    visibility: visible;
+}
+
+#sidebar a svg:last-child {
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sidebar a:hover svg:last-child,
+#sidebar a.active svg:last-child {
+    opacity: 100%;
+    visibility: visible;
+}
+
+#sidebar a:hover svg:first-child,
+#sidebar a.active svg:first-child {
+    opacity: 0%;
+    visibility: hidden;
+}
+
+/* payment */
+.payTable,.payMount,.payTime{
+    transition: all .4s;
+    display: none;
+}
+.payTable.active,.payMount.active,.payTime.active{
+    display: block;
+}
+
+/* hover */
+
+.btnhover1,.btnhover2,.btnhover2 svg path{
+  transition: all .4s;
+}
+
+.btnhover1:hover{
+    background-color: var(--color-primary);
+}
+.btnhover2:hover{
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+.btnhover2:hover svg path{
+    stroke: var(--color-background);
+}
+
+/* darkmodetoggle */
+
+.darkmodetoggle{
+    position: relative;
+}
+
+.darkmodetoggle::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    transition: all .4s;
+}
+.darkmodetoggle.day::after{
+   left: auto;
+   right: 4px;
+}
+.darkmodetoggle.day >div:first-child svg{
+   position: relative;
+   z-index: 9;
+}
+.darkmodetoggle.day >div:first-child svg path{
+   stroke: var(--color-background);
+}
+.darkmodetoggle.night::after{
+   right: auto;
+   left: 4px;
+}
+.darkmodetoggle.night >div:last-child svg{
+   position: relative;
+   z-index: 9;
+}
+.darkmodetoggle.night >div:last-child svg path{
+   stroke: var(--color-background);
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+    .px-xl-12{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #sidebar{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        transition: all .4s;
+        right: -280px;
+        z-index: 20;
+    }
+     #sidebar.active{
+        right: 0;
+    }
+    .h-lg-auto{
+        height: auto;
+    }
+    .gap-lg-6{
+        gap: 6px;
+    }
+
+    #overlay{
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.249);
+        z-index: 10;
+        transition: all .4s;
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+    }
+      #overlay.active{
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 768px) {
+    .fs-md-16{
+        font-size: 16px;
+    }
+      .fs-md-14{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .w-sm-100{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {}
