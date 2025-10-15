@@ -2,10 +2,12 @@
     /* تم روشن (Light Mode) */
     --color-primary: #0E2050;
     --color-blue80: #7D87A1;
+    --color-blue90: #6B7693;
     --color-gray: #DADDE4;
     --color-gray2: #E1E7F0;
     --color-gray3: #B5BAC9;
     --color-gray4: #E5E6EB;
+    --color-gray5: #FAFAFA;
     --color-white: #fff;
     --color-background: #F6F8FE;
     --color-brown: #C99B37;
@@ -16,10 +18,12 @@
     /* تم تاریک (Dark Mode) */
     --color-primary: #0E2050;
     --color-blue80: #7D87A1;
+      --color-blue90: #6B7693;
     --color-gray: #DADDE4;
      --color-gray2: #E1E7F0;
      --color-gray3: #B5BAC9;
       --color-gray4: #E5E6EB;
+        --color-gray5: #FAFAFA;
     --color-white: #fff;
     --color-background: #F6F8FE;
     --color-brown: #C99B37;
@@ -184,6 +188,10 @@ a {
     gap: 12px;
 }
 
+.gap-32 {
+    gap: 32px;
+}
+
 .gap-44 {
     gap: 44px;
 }
@@ -215,12 +223,19 @@ a {
 .w-76 {
     width: 76px;
 }
+.w-85 {
+    width: 85px;
+}
 .w-97 {
     width: 97px;
 }
 
 .w-122 {
     width: 122px;
+}
+
+.w-130 {
+    width: 130px;
 }
 
 .w-244 {
@@ -273,6 +288,9 @@ a {
 }
 
 /* padding */
+.p-10{
+    padding: 10px;
+}
 .py-10 {
     padding-bottom: 10px;
     padding-top: 10px;
@@ -437,6 +455,9 @@ a {
 
 .border-brown {
     border: 1px solid var(--color-brown);
+}
+.border-blue90{
+    border: 1px solid var(--color-blue90);
 }
 
 /* background */
@@ -637,7 +658,7 @@ input[type=number] {
 }
 
 .btnhover3:hover,.btnhover3.active {
-    background-color: var(--color-brown);
+    background-color: var(--color-brown) !important;
     color: var(--color-primary);
 }
 .btnhover3:hover svg path,.btnhover3.active svg path {
@@ -711,6 +732,13 @@ input[type=number] {
   background-color: var(--color-gray4) !important;
 }
 
+/* input style */
+
+.input.filled{
+  background-color: var(--color-gray5) !important;
+  color: var(--color-blue90);
+}
+
 
 /* responsive */
 @media (max-width: 1200px) {
@@ -782,6 +810,18 @@ input[type=number] {
 @media (max-width: 576px) {
     .w-sm-100 {
         width: 100%;
+    }
+      .w-sm-3 {
+        width: 3%;
+    }
+    .h-sm-50{
+        height: 50px;
+    }
+    .position-sm-static{
+        position: static !important;
+    }
+    .pb-sm-24px{
+        padding-bottom: 24px;
     }
 }
 
