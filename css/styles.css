@@ -18,12 +18,12 @@
     /* تم تاریک (Dark Mode) */
     --color-primary: #0E2050;
     --color-blue80: #7D87A1;
-      --color-blue90: #6B7693;
+    --color-blue90: #6B7693;
     --color-gray: #DADDE4;
-     --color-gray2: #E1E7F0;
-     --color-gray3: #B5BAC9;
-      --color-gray4: #E5E6EB;
-        --color-gray5: #FAFAFA;
+    --color-gray2: #E1E7F0;
+    --color-gray3: #B5BAC9;
+    --color-gray4: #E5E6EB;
+    --color-gray5: #FAFAFA;
     --color-white: #fff;
     --color-background: #F6F8FE;
     --color-brown: #C99B37;
@@ -200,6 +200,7 @@ a {
 .w-12vw {
     width: 12vw;
 }
+
 .w-18 {
     width: 18px;
 }
@@ -223,9 +224,11 @@ a {
 .w-76 {
     width: 76px;
 }
+
 .w-85 {
     width: 85px;
 }
+
 .w-97 {
     width: 97px;
 }
@@ -246,6 +249,7 @@ a {
 .h-3 {
     height: 3px;
 }
+
 .h-18 {
     height: 18px;
 }
@@ -270,6 +274,15 @@ a {
     height: 88.5vh;
 }
 
+/* min height */
+
+.min-h-90{
+    min-height: 90px;
+}
+.min-h-97{
+    min-height: 97px;
+}
+
 /* z index */
 .z-0 {
     z-index: 0;
@@ -288,13 +301,15 @@ a {
 }
 
 /* padding */
-.p-10{
+.p-10 {
     padding: 10px;
 }
+
 .py-10 {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
 .px-10 {
     padding-right: 10px;
     padding-left: 10px;
@@ -333,7 +348,7 @@ a {
     padding-top: 40px;
 }
 
-.pb-54{
+.pb-54 {
     padding-bottom: 54px;
 }
 
@@ -345,6 +360,7 @@ a {
 .mt-20 {
     margin-top: 20px;
 }
+
 .mt-36 {
     margin-top: 36px;
 }
@@ -405,6 +421,7 @@ a {
 .-bottom-36 {
     bottom: -36px;
 }
+
 .-bottom-96 {
     bottom: -96px;
 }
@@ -456,7 +473,8 @@ a {
 .border-brown {
     border: 1px solid var(--color-brown);
 }
-.border-blue90{
+
+.border-blue90 {
     border: 1px solid var(--color-blue90);
 }
 
@@ -640,7 +658,9 @@ input[type=number] {
 
 .btnhover1,
 .btnhover2,
-.btnhover2 svg path,.btnhover3,.btnhover3 svg path {
+.btnhover2 svg path,
+.btnhover3,
+.btnhover3 svg path {
     transition: all .4s;
 }
 
@@ -657,11 +677,14 @@ input[type=number] {
     stroke: var(--color-background);
 }
 
-.btnhover3:hover,.btnhover3.active {
+.btnhover3:hover,
+.btnhover3.active {
     background-color: var(--color-brown) !important;
     color: var(--color-primary);
 }
-.btnhover3:hover svg path,.btnhover3.active svg path {
+
+.btnhover3:hover svg path,
+.btnhover3.active svg path {
     stroke: var(--color-primary);
 }
 
@@ -713,30 +736,73 @@ input[type=number] {
 
 /* step */
 
-.step > div > div,.step p,.step > div:last-child,.step > div > div > div{
-   transition: all .4s;
+.step>div>div,
+.step p,
+.step>div:last-child,
+.step>div>div>div {
+    transition: all .4s;
 }
 
-.step.complete > div > div,.step.active > div > div{
-  background-color: var(--color-brown) !important;
-}
-.step.step.complete p,.step.complete > div > div > div,.step.step.active p,.step.active > div > div > div{
-  color: var(--color-primary);
-  font-weight: bold;
-}
-.step.complete > div:last-child{
-  background-color: var(--color-primary) !important;
+.step.complete>div>div,
+.step.active>div>div {
+    background-color: var(--color-brown) !important;
 }
 
-.step.active > div:last-child{
-  background-color: var(--color-gray4) !important;
+.step.step.complete p,
+.step.complete>div>div>div,
+.step.step.active p,
+.step.active>div>div>div {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.step.complete>div:last-child {
+    background-color: var(--color-primary) !important;
+}
+
+.step.active>div:last-child {
+    background-color: var(--color-gray4) !important;
 }
 
 /* input style */
 
-.input.filled{
-  background-color: var(--color-gray5) !important;
-  color: var(--color-blue90);
+.input.filled {
+    background-color: var(--color-gray5) !important;
+    color: var(--color-blue90);
+}
+
+/* tab */
+
+.nav-pills .nav-link {
+    color: var(--color-blue80);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--color-primary) !important;
+    background-color: transparent !important;
+    font-weight: bold;
+}
+.nav-pills .nav-link:hover,
+.nav-pills .show>.nav-link {
+    color: var(--color-primary) !important;
+    background-color: transparent !important;
+}
+
+.nav-link{
+    position: relative;
+}
+
+.nav-link.active::after {
+    transition: all .4s;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 0;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--color-brown);
 }
 
 
@@ -746,10 +812,12 @@ input[type=number] {
         padding-left: 12px;
         padding-right: 12px;
     }
-    .fs-xl-12{
+
+    .fs-xl-12 {
         font-size: 12px;
     }
-    .-right-xl-20{
+
+    .-right-xl-20 {
         right: -20px;
     }
 }
@@ -811,17 +879,24 @@ input[type=number] {
     .w-sm-100 {
         width: 100%;
     }
-      .w-sm-3 {
+
+    .w-sm-3 {
         width: 3%;
     }
-    .h-sm-50{
+
+    .h-sm-50 {
         height: 50px;
     }
-    .position-sm-static{
+
+    .position-sm-static {
         position: static !important;
     }
-    .pb-sm-24px{
+
+    .pb-sm-24px {
         padding-bottom: 24px;
+    }
+    .fs-sm-14{
+        font-size: 14px;
     }
 }
 
