@@ -237,8 +237,16 @@ a {
     width: 122px;
 }
 
+.w-124 {
+    width: 124px;
+}
+
 .w-130 {
     width: 130px;
+}
+
+.w-153 {
+    width: 153px;
 }
 
 .w-244 {
@@ -769,6 +777,17 @@ input[type=number] {
 .input.filled {
     background-color: var(--color-gray5) !important;
     color: var(--color-blue90);
+}
+
+/* radio input */
+.radioBtn,.radioBtn svg path{
+    transition: all .4s;
+}
+.radioBtn:hover,.radioBtn.active{
+    background-color: var(--color-brown);
+}
+.radioBtn:hover svg path,.radioBtn.active svg path{
+    fill: var(--color-primary);
 }
 
 /* tab */
