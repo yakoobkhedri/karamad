@@ -302,9 +302,10 @@
             <p class="mb-0 text-main fw-bold fs-20">احراز هویت</p>
           </div>
           <div class="p-sm-4 p-3">
+            <!-- نوار مراحل -->
             <div
               class="d-flex gap-4 gap-sm-0 flex-column flex-sm-row align-items-center justify-content-center pt-4 pb-sm-24px pb-54 px-4 rounded-16 border-gray2">
-              <div data-id="1" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step complete">
+              <div data-id="1" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step active">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -319,7 +320,7 @@
                 </div>
                 <div class="h-3 w-12vw bg-gray4 h-sm-50 w-sm-3"></div>
               </div>
-              <div data-id="3" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step complete">
+              <div data-id="2" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -334,7 +335,7 @@
                 </div>
                 <div class="h-3 w-12vw bg-gray4 h-sm-50 w-sm-3"></div>
               </div>
-              <div data-id="3" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step complete">
+              <div data-id="3" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -349,7 +350,7 @@
                 </div>
                 <div class="h-3 w-12vw bg-gray4 h-sm-50 w-sm-3"></div>
               </div>
-              <div data-id="4" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step complete">
+              <div data-id="4" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -364,7 +365,7 @@
                 </div>
                 <div class="h-3 w-12vw bg-gray4 h-sm-50 w-sm-3"></div>
               </div>
-              <div data-id="5" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step complete">
+              <div data-id="5" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -380,82 +381,89 @@
                 <div class="h-3 w-12vw bg-gray4 h-sm-50 w-sm-3 d-none"></div>
               </div>
             </div>
+
+            <!-- محتوای مراحل -->
             <div class="mt-36">
-              <div data-id="1" class="d-none">
+              <!-- مرحله 1: اطلاعات شخصی -->
+              <div data-id="1" class="step-content active">
                 <div class="row g-3">
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">نام</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ علی">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">نام خانوادگی</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ محمدی">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">نام پدر</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ رضا">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">شماره موبایل</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ ۰۹۱۲۳۴۵۶۷۸۹">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">شماره شناسنامه</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ ۰۱۲۳۴۵۶۷۸۹">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">سریال شناسنامه</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ ۱۲۳۴۵۶">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">سری شناسنامه</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ ۱۳ ر">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">جنسیت</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step1-input"
                         placeholder="مثال:‌ آقا">
                     </div>
                   </div>
                 </div>
-                <button
-                  class="mt-36 bg-white me-auto btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
+                <button id="step1-next"
+                  class="mt-36 bg-white me-auto btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold btn-disabled"
+                  disabled>
                   <p class="mb-0">مرحله بعد</p>
                   <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 9L1 5L5 1" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
                       stroke-linejoin="round" />
-                    <script xmlns="" />
                   </svg>
                 </button>
               </div>
-              <div data-id="2" class="d-none">
+
+              <!-- مرحله 2: اطلاعات شغلی -->
+              <div data-id="2" class="step-content">
                 <div class="row g-3">
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">نوع شغل</p>
-                      <select class="fs-14 bg-white rounded-8 border-gray px-10 h-40 w-100 outline-none input">
+                      <select
+                        class="fs-14 bg-white rounded-8 border-gray px-10 h-40 w-100 outline-none input step2-input">
+                        <option value="">انتخاب کنید</option>
                         <option>آزاد</option>
                         <option>معلم</option>
                       </select>
@@ -464,21 +472,21 @@
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">عنوان شغلی</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step2-input"
                         placeholder="مثال:‌ فروشنده طلا">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">نام شرکت</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step2-input"
                         placeholder="مثال:‌ شرکت لیزینگ کارآمد">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">کد پستی محل کار</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step2-input"
                         placeholder="مثال:‌ ۹۱۹۷۱۹۲۰۹۰">
                     </div>
                   </div>
@@ -496,7 +504,6 @@
                             stroke-linecap="round" stroke-linejoin="round" />
                           <path d="M8.17981 9.52716L9.76496 11.1115L12.9327 7.94287" stroke="#0E2050" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round" />
-                          <script xmlns="" />
                         </svg>
                         <p class="mb-0">استعلام</p>
                       </a>
@@ -505,168 +512,8 @@
                   <div class="col-12">
                     <div>
                       <p class="text-main fw-bold mb-2">آدرس محل کار</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step2-input"
                         placeholder="مثال:‌ تهران، خیابان شهید مطهری، خیابان فجر (جم سابق)، خیابان شهید لطفی، پلاک ۷۱، طبقه دوم و سوم">
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div>
-                      <p class="text-main fw-bold mb-2">مدارک شغلی</p>
-                      <div class="d-flex align-items-center gap-3 flex-wrap">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">جواز کسب</p>
-                          </div>
-                          <div class="p-4 px-sm-5 min-h-97 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none align-items-center justify-content-center gap-32">
-                              <div>
-                                <div class="d-flex align-items-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0 fs-14">تاریخ بارگذاری </p>
-                                </div>
-                                <p class="mb-0 mt-1 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                              </div>
-                              <a
-                                class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                  <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                  <path
-                                    d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                    stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                  <script xmlns="" />
-                                </svg>
-                                <p class="mb-0">دانلود</p>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">فیش حقوقی</p>
-                          </div>
-                          <div class="p-4 px-sm-5 min-h-97 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center gap-32">
-                              <div>
-                                <div class="d-flex align-items-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0 fs-14">تاریخ بارگذاری </p>
-                                </div>
-                                <p class="mb-0 mt-1 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                              </div>
-                              <a
-                                class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                  <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                  <path
-                                    d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                    stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                  <script xmlns="" />
-                                </svg>
-                                <p class="mb-0">دانلود</p>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">حکم کارگزینی</p>
-                          </div>
-                          <div class="p-4 px-sm-5 min-h-97 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-flex align-items-center justify-content-center gap-32">
-                              <div>
-                                <div class="d-flex align-items-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0 fs-14">تاریخ بارگذاری </p>
-                                </div>
-                                <p class="mb-0 mt-1 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                              </div>
-                              <a
-                                class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                  <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                  <path
-                                    d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                    stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                  <script xmlns="" />
-                                </svg>
-                                <p class="mb-0">دانلود</p>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -681,33 +528,33 @@
                         stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       <path d="M8.62634 5.73389L13.2277 9.11517" stroke="#9098AE" stroke-width="1.5"
                         stroke-linecap="round" stroke-linejoin="round" />
-                      <script xmlns="" />
                     </svg>
                     <p class="mb-0">ویرایش مدرک</p>
                   </button>
                   <div class="d-flex align-items-center gap-3">
-                    <button
+                    <button id="step2-prev"
                       class="bg-white me-auto btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L5 5L1 9" stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
-                        <script xmlns="" />
                       </svg>
                       <p class="mb-0">مرحله قبل</p>
                     </button>
-                    <button
-                      class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
+                    <button id="step2-next"
+                      class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold btn-disabled"
+                      disabled>
                       <p class="mb-0">مرحله بعد</p>
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 9L1 5L5 1" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
-                        <script xmlns="" />
                       </svg>
                     </button>
                   </div>
                 </div>
               </div>
-              <div data-id="3" class="d-none">
+
+              <!-- مرحله 3: مستندات درآمدی -->
+              <div data-id="3" class="step-content">
                 <ul class="nav nav-pills p-0 border-b-gray pb-2 gap-4 fs-sm-14" id="pills-tab" role="tablist">
                   <li class="nav-item w-sm-100" role="presentation">
                     <button class="nav-link w-sm-100 px-0 active" id="pills-home-tab" data-bs-toggle="pill"
@@ -730,7 +577,7 @@
                     aria-labelledby="pills-home-tab" tabindex="0">
                     <div class="row align-items-center g-xxl-4 g-3 flex-wrap">
                       <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
+                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0 doc-container" data-doc-id="print-1">
                           <div
                             class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
                             <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
@@ -738,7 +585,7 @@
                           </div>
                           <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
                             <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                              class="upload-btn w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
                               <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -748,7 +595,6 @@
                                   stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
                               </svg>
                               <p class="mb-0">بارگذاری مدرک</p>
                               <input type="file"
@@ -764,7 +610,7 @@
                               </div>
                               <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
                                 <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                                  class="doc-download-btn w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                                   <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
@@ -775,12 +621,11 @@
                                       d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
                                       stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
                                       stroke-linejoin="round" />
-                                    <script xmlns="" />
                                   </svg>
                                   <p class="mb-0">دانلود</p>
                                 </a>
                                 <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                                  class="doc-edit-btn w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                                   <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
@@ -791,287 +636,6 @@
                                       stroke-linejoin="round" />
                                     <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">پرینت حساب 2</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">پرینت حساب 3</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">پرینت حساب 4</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">پرینت حساب 5</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
                                   </svg>
                                 </a>
                               </div>
@@ -1081,19 +645,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                    tabindex="0">
+                     <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                    aria-labelledby="pills-profile-tab" tabindex="0">
                     <div class="row align-items-center g-xxl-4 g-3 flex-wrap">
                       <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
+                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0 doc-container" data-doc-id="print-2">
                           <div
                             class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
                             <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی دیگر ۱</p>
+                            <p class="mb-0">مستند درآمد دیگر (اختیاری) 1</p>
                           </div>
                           <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
                             <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                              class="upload-btn w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
                               <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1103,7 +667,6 @@
                                   stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
                               </svg>
                               <p class="mb-0">بارگذاری مدرک</p>
                               <input type="file"
@@ -1119,7 +682,7 @@
                               </div>
                               <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
                                 <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                                  class="doc-download-btn w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                                   <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
@@ -1130,12 +693,11 @@
                                       d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
                                       stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
                                       stroke-linejoin="round" />
-                                    <script xmlns="" />
                                   </svg>
                                   <p class="mb-0">دانلود</p>
                                 </a>
                                 <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                                  class="doc-edit-btn w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                                   <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
@@ -1146,287 +708,6 @@
                                       stroke-linejoin="round" />
                                     <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی دیگر 2</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی دیگر 3</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی دیگر 4</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی دیگر 5</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
                                   </svg>
                                 </a>
                               </div>
@@ -1436,19 +717,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                    tabindex="0">
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                    aria-labelledby="pills-contact-tab" tabindex="0">
                     <div class="row align-items-center g-xxl-4 g-3 flex-wrap">
                       <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
+                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0 doc-container" data-doc-id="print-3">
                           <div
                             class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
                             <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی همسر ۱</p>
+                            <p class="mb-0">مستند درآمدی همسر (اختیاری) 1</p>
                           </div>
                           <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
                             <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                              class="upload-btn w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
                               <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1458,7 +739,6 @@
                                   stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
                               </svg>
                               <p class="mb-0">بارگذاری مدرک</p>
                               <input type="file"
@@ -1474,7 +754,7 @@
                               </div>
                               <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
                                 <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                                  class="doc-download-btn w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                                   <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
@@ -1485,12 +765,11 @@
                                       d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
                                       stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
                                       stroke-linejoin="round" />
-                                    <script xmlns="" />
                                   </svg>
                                   <p class="mb-0">دانلود</p>
                                 </a>
                                 <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                                  class="doc-edit-btn w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                                   <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
@@ -1501,287 +780,6 @@
                                       stroke-linejoin="round" />
                                     <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
                                       stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی همسر 2</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی همسر 3</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی همسر 4</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                          <div
-                            class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                            <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                            <p class="mb-0">مستند درآمدی همسر 5</p>
-                          </div>
-                          <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                            <div
-                              class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                  d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">بارگذاری مدرک</p>
-                              <input type="file"
-                                class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                            </div>
-                            <div class="d-none fs-14">
-                              <div>
-                                <div class="d-flex align-items-center justify-content-center gap-1">
-                                  <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                                  <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                                  <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                                </div>
-                              </div>
-                              <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                                <a
-                                  class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <script xmlns="" />
-                                  </svg>
-                                  <p class="mb-0">دانلود</p>
-                                </a>
-                                <a
-                                  class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                                  <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                      d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                      stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
-                                      stroke-linejoin="round" />
-                                    <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                      stroke-linecap="round" stroke-linejoin="round" />
-                                    <script xmlns="" />
                                   </svg>
                                 </a>
                               </div>
@@ -1794,33 +792,36 @@
                 </div>
                 <div class="d-flex align-items-center justify-content-end gap-2 mt-36 flex-wrap">
                   <div class="d-flex align-items-center gap-3">
-                    <button
+                    <button id="step3-prev"
                       class="bg-white me-auto btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L5 5L1 9" stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round"></path>
-                        <script xmlns=""></script>
                       </svg>
                       <p class="mb-0">مرحله قبل</p>
                     </button>
-                    <button
-                      class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
+                    <button id="step3-next"
+                      class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold btn-disabled"
+                      disabled>
                       <p class="mb-0">مرحله بعد</p>
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 9L1 5L5 1" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round"></path>
-                        <script xmlns=""></script>
                       </svg>
                     </button>
                   </div>
                 </div>
               </div>
-              <div data-id="4" class="d-none">
+
+              <!-- مرحله 4: اطلاعات آدرس -->
+              <div data-id="4" class="step-content">
                 <div class="row g-3">
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">استان</p>
-                      <select class="fs-14 bg-white rounded-8 border-gray px-10 h-40 w-100 outline-none input">
+                      <select
+                        class="fs-14 bg-white rounded-8 border-gray px-10 h-40 w-100 outline-none input step4-input">
+                        <option value="">انتخاب کنید</option>
                         <option>تهران</option>
                         <option>قم</option>
                       </select>
@@ -1829,7 +830,9 @@
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">شهر</p>
-                      <select class="fs-14 bg-white rounded-8 border-gray px-10 h-40 w-100 outline-none input">
+                      <select
+                        class="fs-14 bg-white rounded-8 border-gray px-10 h-40 w-100 outline-none input step4-input">
+                        <option value="">انتخاب کنید</option>
                         <option>تهران</option>
                         <option>قم</option>
                       </select>
@@ -1838,14 +841,14 @@
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">تلفن تماس</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step4-input"
                         placeholder="مثال:‌ ۰۲۱۱۲۳۴۵۶۷۸">
                     </div>
                   </div>
                   <div class="col-xl-4 col-md-6">
                     <div>
                       <p class="text-main fw-bold mb-2">کد پستی محل سکونت</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step4-input"
                         placeholder="مثال:‌ ۹۱۹۷۱۹۲۰۹۰">
                     </div>
                   </div>
@@ -1863,7 +866,6 @@
                             stroke-linecap="round" stroke-linejoin="round" />
                           <path d="M8.17981 9.52716L9.76496 11.1115L12.9327 7.94287" stroke="#0E2050" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round" />
-                          <script xmlns="" />
                         </svg>
                         <p class="mb-0">استعلام</p>
                       </a>
@@ -1872,7 +874,7 @@
                   <div class="col-12">
                     <div>
                       <p class="text-main fw-bold mb-2">آدرس محل سکونت</p>
-                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input"
+                      <input class="fs-14 rounded-8 border-gray px-10 h-40 w-100 outline-none input step4-input"
                         placeholder="مثال:‌ تهران، خیابان شهید مطهری، خیابان فجر (جم سابق)، خیابان شهید لطفی، پلاک ۷۱، طبقه دوم و سوم">
                     </div>
                   </div>
@@ -1888,33 +890,33 @@
                         stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       <path d="M8.62634 5.73389L13.2277 9.11517" stroke="#9098AE" stroke-width="1.5"
                         stroke-linecap="round" stroke-linejoin="round" />
-                      <script xmlns="" />
                     </svg>
                     <p class="mb-0">ویرایش آدرس</p>
                   </button>
                   <div class="d-flex align-items-center gap-3">
-                    <button
+                    <button id="step4-prev"
                       class="bg-white me-auto btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L5 5L1 9" stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
-                        <script xmlns="" />
                       </svg>
                       <p class="mb-0">مرحله قبل</p>
                     </button>
-                    <button
-                      class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
+                    <button id="step4-next"
+                      class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold btn-disabled"
+                      disabled>
                       <p class="mb-0">مرحله بعد</p>
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 9L1 5L5 1" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
-                        <script xmlns="" />
                       </svg>
                     </button>
                   </div>
                 </div>
               </div>
-              <div data-id="5">
+
+              <!-- مرحله 5: مدارک هویتی -->
+              <div data-id="5" class="step-content">
                 <div class="row align-items-center g-xxl-4 g-3 flex-wrap">
                   <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
@@ -1925,7 +927,7 @@
                       </div>
                       <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
                         <div
-                          class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                          class="upload-btn w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-none align-items-center justify-content-center gap-1 fs-14 fw-bold">
                           <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1935,7 +937,6 @@
                               stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
                               stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <script xmlns="" />
                           </svg>
                           <p class="mb-0">بارگذاری مدرک</p>
                           <input type="file"
@@ -1951,7 +952,7 @@
                           </div>
                           <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
                             <a
-                              class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                              class="doc-download-btn w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                               <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
@@ -1961,12 +962,11 @@
                                 <path
                                   d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
                                   stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
                               </svg>
                               <p class="mb-0">دانلود</p>
                             </a>
                             <a
-                              class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
+                              class="doc-edit-btn w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
                               <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
@@ -1976,279 +976,6 @@
                                   stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
                                   stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                      <div
-                        class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                        <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                        <p class="mb-0">پرینت حساب 2</p>
-                      </div>
-                      <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                        <div
-                          class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                          <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                              stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <script xmlns="" />
-                          </svg>
-                          <p class="mb-0">بارگذاری مدرک</p>
-                          <input type="file"
-                            class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                        </div>
-                        <div class="d-none fs-14">
-                          <div>
-                            <div class="d-flex align-items-center justify-content-center gap-1">
-                              <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                              <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                              <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                            </div>
-                          </div>
-                          <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                            <a
-                              class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">دانلود</p>
-                            </a>
-                            <a
-                              class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                      <div
-                        class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                        <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                        <p class="mb-0">پرینت حساب 3</p>
-                      </div>
-                      <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                        <div
-                          class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                          <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                              stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <script xmlns="" />
-                          </svg>
-                          <p class="mb-0">بارگذاری مدرک</p>
-                          <input type="file"
-                            class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                        </div>
-                        <div class="d-none fs-14">
-                          <div>
-                            <div class="d-flex align-items-center justify-content-center gap-1">
-                              <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                              <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                              <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                            </div>
-                          </div>
-                          <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                            <a
-                              class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">دانلود</p>
-                            </a>
-                            <a
-                              class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                      <div
-                        class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                        <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                        <p class="mb-0">پرینت حساب 4</p>
-                      </div>
-                      <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                        <div
-                          class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                          <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                              stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <script xmlns="" />
-                          </svg>
-                          <p class="mb-0">بارگذاری مدرک</p>
-                          <input type="file"
-                            class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                        </div>
-                        <div class="d-none fs-14">
-                          <div>
-                            <div class="d-flex align-items-center justify-content-center gap-1">
-                              <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                              <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                              <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                            </div>
-                          </div>
-                          <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                            <a
-                              class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">دانلود</p>
-                            </a>
-                            <a
-                              class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="rounded-8 border-gray overflow-hidden flex-grow-1 flex-md-grow-0">
-                      <div
-                        class="d-flex align-items-center justify-content-center gap-1 fw-bold text-main p-10 bg-background">
-                        <img alt="icon" src="images/icons/Paper.svg" class="flex-shrink-0">
-                        <p class="mb-0">پرینت حساب 5</p>
-                      </div>
-                      <div class="px-4 py-10 min-h-90 d-flex align-items-center justify-content-center">
-                        <div
-                          class="w-130 h-40 mx-auto cursor-pointer position-relative btnhover2 rounded-8 text-main bg-brown d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                          <svg class="flex-shrink-0" width="21" height="20" viewBox="0 0 21 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M6.6579 7.48661H5.8804C4.18457 7.48661 2.80957 8.86161 2.80957 10.5574L2.80957 14.6199C2.80957 16.3149 4.18457 17.6899 5.8804 17.6899H15.1554C16.8512 17.6899 18.2262 16.3149 18.2262 14.6199V10.5491C18.2262 8.85828 16.8554 7.48661 15.1646 7.48661H14.3787"
-                              stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.5179 1.82521V11.8594" stroke="#0E2050" stroke-width="1.5"
-                              stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8.0885 4.26562L10.5177 1.82563L12.9477 4.26562" stroke="#0E2050"
-                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <script xmlns="" />
-                          </svg>
-                          <p class="mb-0">بارگذاری مدرک</p>
-                          <input type="file"
-                            class="position-absolute w-100 h-100 end-0 start-0 bottom-0 top-0 opacity-none cursor-pointer">
-                        </div>
-                        <div class="d-none fs-14">
-                          <div>
-                            <div class="d-flex align-items-center justify-content-center gap-1">
-                              <img alt="icon" src="images/icons/Calendar (2).svg" class="flex-shrink-0">
-                              <p class="text-blue80 mb-0">تاریخ بارگذاری </p>
-                              <p class="mb-0 text-main text-center">۱۴۰۴/۰۶/۲۹</p>
-                            </div>
-                          </div>
-                          <div class="mt-2 gap-2 d-flex align-items-center justify-content-center">
-                            <a
-                              class="w-85 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="18" height="16" viewBox="0 0 18 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.60181 10.8633L8.60181 0.829102" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M11.0317 8.42334L8.60174 10.8633L6.17174 8.42334" stroke="#6B7693"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M12.4626 4.77295H13.2401C14.9359 4.77295 16.3101 6.14712 16.3101 7.84378V11.9138C16.3101 13.6054 14.9392 14.9763 13.2476 14.9763L3.96423 14.9763C2.26839 14.9763 0.893392 13.6013 0.893392 11.9054L0.893392 7.83462C0.893392 6.14378 2.26506 4.77295 3.95589 4.77295L4.74089 4.77295"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
-                              </svg>
-                              <p class="mb-0">دانلود</p>
-                            </a>
-                            <a
-                              class="w-40 h-40 btnhover3 rounded-8 text-blue80 bg-white border-blue90 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 fs-14 fw-bold">
-                              <svg class="flex-shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.2012 16.5039H16.2358" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                  d="M5.82138 16.6023L7.21017 16.1983C7.95663 15.9808 8.607 15.5162 9.05358 14.8808L14.3776 7.4982C15.0149 6.62376 14.8226 5.39925 13.9482 4.76188L12.5036 3.70873C11.6293 3.07245 10.4037 3.26488 9.76725 4.1381L4.38486 11.6034C3.97412 12.1884 3.75708 12.887 3.76306 13.6022L3.77641 15.082C3.78649 16.141 4.80473 16.8978 5.82138 16.6023Z"
-                                  stroke="#6B7693" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M8.62622 5.73389L13.2276 9.11517" stroke="#6B7693" stroke-width="1.5"
-                                  stroke-linecap="round" stroke-linejoin="round" />
-                                <script xmlns="" />
                               </svg>
                             </a>
                           </div>
@@ -2273,7 +1000,6 @@
                           <path opacity="0.4"
                             d="M28.1842 31.2544C25.9547 32.8905 23.2052 33.8579 20.2343 33.8579C17.2778 33.8579 14.5406 32.8999 12.3169 31.2782C13.2549 28.9622 15.8086 27.0674 20.2532 27.0674C24.6918 27.0674 27.2437 28.9504 28.1842 31.2544Z"
                             fill="#C99B37" />
-                          <script xmlns="" />
                         </svg>
                         <p class="mb-0 fw-bold fs-20 text-main">مشتری</p>
                         <input checked name="auth" type="radio"
@@ -2293,7 +1019,6 @@
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M25.199 21.6605C24.194 21.6622 23.369 22.4838 23.369 23.4988V24.3322C23.369 24.8172 23.1723 25.2838 22.8306 25.6272L22.2556 26.2122L22.239 26.2188V26.2222C21.5206 26.9422 21.539 28.1055 22.2556 28.8188L22.8306 29.4038C23.1723 29.7488 23.369 30.2122 23.369 30.6972V31.5388C23.369 32.5522 24.194 33.3755 25.199 33.3755H26.0423C26.5273 33.3755 26.994 33.5688 27.3356 33.9105L27.9273 34.4938V34.5038C28.6456 35.2172 29.8123 35.2122 30.5306 34.4922L31.104 33.9072C31.464 33.5655 31.929 33.3722 32.414 33.3722H33.2406C34.2623 33.3738 35.089 32.5522 35.089 31.5388V30.6988C35.089 30.2138 35.2673 29.7505 35.6273 29.4055L36.2006 28.8205L36.219 28.8138C36.919 28.0922 36.919 26.9288 36.2006 26.2138L35.6273 25.6288C35.2673 25.2855 35.089 24.8172 35.089 24.3338V23.4988C35.089 22.4838 34.2623 21.6605 33.2406 21.6605H32.414C31.929 21.6605 31.464 21.4672 31.1223 21.1255L30.5306 20.5405V20.5355L30.5123 20.5338C29.794 19.8188 28.6273 19.8205 27.9273 20.5405L27.3356 21.1272C26.994 21.4688 26.5273 21.6605 26.0423 21.6605H25.199ZM27.5545 30.031C27.7878 30.266 28.1061 30.3977 28.4378 30.3977C28.7695 30.3977 29.0895 30.2643 29.3228 30.0293L32.4728 26.8677C32.9595 26.3777 32.9578 25.586 32.4695 25.0993C31.9795 24.6127 31.1878 24.6143 30.7011 25.1027L28.4361 27.3777L27.7861 26.7277C27.2995 26.2393 26.5095 26.2393 26.0195 26.726C25.5311 27.2143 25.5311 28.006 26.0195 28.4943L27.5545 30.031Z"
                             fill="#C99B37" />
-                          <script xmlns="" />
                         </svg>
                         <p class="mb-0 fw-bold fs-20 text-main">ضامن</p>
                         <input name="auth" type="radio"
@@ -2303,12 +1028,11 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-36 flex-wrap">
-                  <button
+                  <button id="step5-prev"
                     class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-12 w-97 h-40 rounded-8 border-gray fs-14 fw-bold">
                     <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 1L5 5L1 9" stroke="#6B7693" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"></path>
-                      <script xmlns=""></script>
                     </svg>
                     <p class="mb-0">مرحله قبل</p>
                   </button>
@@ -2316,25 +1040,42 @@
                     <a
                       class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 w-124 h-40 rounded-8 border-gray fs-14 fw-bold">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.08325 14.6094H17.0838" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.08325 9.80957H17.0838" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M7.08325 5.00977H17.0838" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.75935 4.99741V5.0486M3.9754 5.00841C3.9754 5.12363 3.87804 5.21703 3.75802 5.21703C3.63801 5.21703 3.54077 5.12363 3.54077 5.00841C3.54077 4.8932 3.63801 4.7998 3.75802 4.7998C3.87804 4.7998 3.9754 4.8932 3.9754 5.00841Z" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.75935 9.90073V9.95193M3.9754 9.91177C3.9754 10.027 3.87804 10.1203 3.75802 10.1203C3.63801 10.1203 3.54077 10.027 3.54077 9.91177C3.54077 9.79657 3.63801 9.70312 3.75802 9.70312C3.87804 9.70312 3.9754 9.79657 3.9754 9.91177Z" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.75935 14.598V14.6492M3.9754 14.609C3.9754 14.7242 3.87804 14.8176 3.75802 14.8176C3.63801 14.8176 3.54077 14.7242 3.54077 14.609C3.54077 14.4938 3.63801 14.4004 3.75802 14.4004C3.87804 14.4004 3.9754 14.4938 3.9754 14.609Z" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<script xmlns=""/></svg>
+                        <path d="M7.08325 14.6094H17.0838" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M7.08325 9.80957H17.0838" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M7.08325 5.00977H17.0838" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M3.75935 4.99741V5.0486M3.9754 5.00841C3.9754 5.12363 3.87804 5.21703 3.75802 5.21703C3.63801 5.21703 3.54077 5.12363 3.54077 5.00841C3.54077 4.8932 3.63801 4.7998 3.75802 4.7998C3.87804 4.7998 3.9754 4.8932 3.9754 5.00841Z"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M3.75935 9.90073V9.95193M3.9754 9.91177C3.9754 10.027 3.87804 10.1203 3.75802 10.1203C3.63801 10.1203 3.54077 10.027 3.54077 9.91177C3.54077 9.79657 3.63801 9.70312 3.75802 9.70312C3.87804 9.70312 3.9754 9.79657 3.9754 9.91177Z"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M3.75935 14.598V14.6492M3.9754 14.609C3.9754 14.7242 3.87804 14.8176 3.75802 14.8176C3.63801 14.8176 3.54077 14.7242 3.54077 14.609C3.54077 14.4938 3.63801 14.4004 3.75802 14.4004C3.87804 14.4004 3.9754 14.4938 3.9754 14.609Z"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
                       <p class="mb-0">لیست طرح‌ها</p>
                     </a>
                     <a
                       class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 w-153 h-40 rounded-8 border-gray fs-14 fw-bold">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.103 8.24853C12.103 9.36375 11.1614 10.2677 9.9997 10.2677C8.8372 10.2677 7.89636 9.36375 7.89636 8.24853C7.89636 7.13333 8.8372 6.22852 9.9997 6.22852C11.1614 6.22852 12.103 7.13333 12.103 8.24853Z" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M6.70654 14.5355C6.70654 13.5035 7.55571 12.2188 9.99983 12.2188C12.4448 12.2188 13.2932 13.4948 13.2932 14.5276" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M17.4995 13.3223V14.5839C17.4995 16.3039 16.0478 17.6975 14.2562 17.6975H13.1812" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M2.49915 13.3223V14.5839C2.49915 16.3039 3.95165 17.6975 5.74332 17.6975H6.79081" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M2.49915 7.67208V6.4105C2.49915 4.6913 3.95165 3.29688 5.74332 3.29688H6.81749" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M17.5005 7.67208V6.4105C17.5005 4.6913 16.048 3.29688 14.2564 3.29688H13.2089" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <script xmlns=""/></svg>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M12.103 8.24853C12.103 9.36375 11.1614 10.2677 9.9997 10.2677C8.8372 10.2677 7.89636 9.36375 7.89636 8.24853C7.89636 7.13333 8.8372 6.22852 9.9997 6.22852C11.1614 6.22852 12.103 7.13333 12.103 8.24853Z"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M6.70654 14.5355C6.70654 13.5035 7.55571 12.2188 9.99983 12.2188C12.4448 12.2188 13.2932 13.4948 13.2932 14.5276"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17.4995 13.3223V14.5839C17.4995 16.3039 16.0478 17.6975 14.2562 17.6975H13.1812"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2.49915 13.3223V14.5839C2.49915 16.3039 3.95165 17.6975 5.74332 17.6975H6.79081"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2.49915 7.67208V6.4105C2.49915 4.6913 3.95165 3.29688 5.74332 3.29688H6.81749"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17.5005 7.67208V6.4105C17.5005 4.6913 16.048 3.29688 14.2564 3.29688H13.2089"
+                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
                       <p class="mb-0">اعتبارسنجی ضامن</p>
                     </a>
                   </div>

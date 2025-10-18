@@ -284,10 +284,11 @@ a {
 
 /* min height */
 
-.min-h-90{
+.min-h-90 {
     min-height: 90px;
 }
-.min-h-97{
+
+.min-h-97 {
     min-height: 97px;
 }
 
@@ -772,6 +773,52 @@ input[type=number] {
     background-color: var(--color-gray4) !important;
 }
 
+   .btn-disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .step-content {
+            display: none;
+        }
+        
+        .step-content.active {
+            display: block;
+        }
+        
+        .upload-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .upload-container input[type="file"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: pointer;
+            display: block;
+        }
+        
+        .uploaded-doc {
+            display: none;
+        }
+        
+        .doc-uploaded .upload-btn {
+            display: none;
+        }
+        
+        .doc-uploaded .uploaded-doc {
+            display: flex;
+        }
+
 /* input style */
 
 .input.filled {
@@ -780,13 +827,18 @@ input[type=number] {
 }
 
 /* radio input */
-.radioBtn,.radioBtn svg path{
+.radioBtn,
+.radioBtn svg path {
     transition: all .4s;
 }
-.radioBtn:hover,.radioBtn.active{
+
+.radioBtn:hover,
+.radioBtn.active {
     background-color: var(--color-brown);
 }
-.radioBtn:hover svg path,.radioBtn.active svg path{
+
+.radioBtn:hover svg path,
+.radioBtn.active svg path {
     fill: var(--color-primary);
 }
 
@@ -802,13 +854,14 @@ input[type=number] {
     background-color: transparent !important;
     font-weight: bold;
 }
+
 .nav-pills .nav-link:hover,
 .nav-pills .show>.nav-link {
     color: var(--color-primary) !important;
     background-color: transparent !important;
 }
 
-.nav-link{
+.nav-link {
     position: relative;
 }
 
@@ -914,7 +967,8 @@ input[type=number] {
     .pb-sm-24px {
         padding-bottom: 24px;
     }
-    .fs-sm-14{
+
+    .fs-sm-14 {
         font-size: 14px;
     }
 }
