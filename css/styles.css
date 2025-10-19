@@ -103,6 +103,21 @@ a {
     max-width: 241px;
     width: 100%;
 }
+.max-w-446{
+    max-width: 446px;
+    width: 100%;
+}
+.max-w-750{
+    max-width: 750px;
+    width: 100%;
+}
+
+/* modal */
+
+.modal-backdrop {
+  background-color: #0E2050CC;
+  backdrop-filter: blur(6px)
+}
 
 /* font size */
 .fs-8 {
@@ -549,6 +564,10 @@ a {
 
 .rounded-16 {
     border-radius: 16px;
+}
+
+.rounded-24 {
+    border-radius: 24px;
 }
 
 /* outline-none */
