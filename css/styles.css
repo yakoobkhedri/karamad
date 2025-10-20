@@ -3,6 +3,7 @@
     --color-primary: #0E2050;
     --color-blue80: #7D87A1;
     --color-blue90: #6B7693;
+    --color-blue: #0F73E6;
     --color-gray: #DADDE4;
     --color-gray2: #E1E7F0;
     --color-gray3: #B5BAC9;
@@ -19,6 +20,7 @@
     --color-primary: #0E2050;
     --color-blue80: #7D87A1;
     --color-blue90: #6B7693;
+    --color-blue: #0F73E6;
     --color-gray: #DADDE4;
     --color-gray2: #E1E7F0;
     --color-gray3: #B5BAC9;
@@ -103,11 +105,23 @@ a {
     max-width: 241px;
     width: 100%;
 }
-.max-w-446{
+
+.max-w-398 {
+    max-width: 398px;
+    width: 100%;
+}
+
+.max-w-446 {
     max-width: 446px;
     width: 100%;
 }
-.max-w-750{
+
+.max-w-450 {
+    max-width: 450px;
+    width: 100%;
+}
+
+.max-w-750 {
     max-width: 750px;
     width: 100%;
 }
@@ -115,8 +129,43 @@ a {
 /* modal */
 
 .modal-backdrop {
-  background-color: #0E2050CC;
-  backdrop-filter: blur(6px)
+    background-color: #0E2050CC;
+    -webkit-backdrop-filter: blur(6px) !important;
+    backdrop-filter: blur(6px) !important;
+}
+
+#modalbox {
+    background: #0E2050CC;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    z-index: 10;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modalbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ترنزیشن برای فرم‌ها */
+#panellogin,
+#wellcome {
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+#modalbox.active #panellogin,
+#modalbox.active #wellcome {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* font size */
@@ -203,6 +252,10 @@ a {
     gap: 12px;
 }
 
+.gap-14 {
+    gap: 14px;
+}
+
 .gap-32 {
     gap: 32px;
 }
@@ -234,6 +287,14 @@ a {
 
 .w-40 {
     width: 40px;
+}
+
+.w-58 {
+    width: 58px;
+}
+
+.w-64 {
+    width: 64px;
 }
 
 .w-76 {
@@ -289,8 +350,20 @@ a {
     height: 32px !important;
 }
 
+.h-35 {
+    height: 35px;
+}
+
 .h-40 {
     height: 40px;
+}
+
+.h-58 {
+    height: 58px;
+}
+
+.h-64 {
+    height: 64px;
 }
 
 .h-88-5 {
@@ -353,6 +426,10 @@ a {
     padding-top: 15px;
 }
 
+.p-20 {
+    padding: 20px;
+}
+
 .py-20 {
     padding-bottom: 20px;
     padding-top: 20px;
@@ -361,6 +438,10 @@ a {
 .px-28 {
     padding-right: 28px;
     padding-left: 28px;
+}
+
+.pb-36 {
+    padding-bottom: 36px;
 }
 
 .py-40 {
@@ -379,6 +460,10 @@ a {
 /* margin */
 .mb-8 {
     margin-bottom: 8px;
+}
+
+.mt-12 {
+    margin-top: 12px;
 }
 
 .mt-20 {
@@ -412,6 +497,10 @@ a {
 
 .text-gray4 {
     color: var(--color-gray4);
+}
+
+.text-blue {
+    color: var(--color-blue);
 }
 
 /* left */
@@ -560,6 +649,10 @@ a {
 
 .rounded-12 {
     border-radius: 12px;
+}
+
+.rounded-14 {
+    border-radius: 14px;
 }
 
 .rounded-16 {
@@ -792,51 +885,51 @@ input[type=number] {
     background-color: var(--color-gray4) !important;
 }
 
-   .btn-disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-        
-        .step-content {
-            display: none;
-        }
-        
-        .step-content.active {
-            display: block;
-        }
-        
-        .upload-container {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .upload-container input[type="file"] {
-            position: absolute;
-            top: 0;
-            right: 0;
-            min-width: 100%;
-            min-height: 100%;
-            font-size: 100px;
-            text-align: right;
-            filter: alpha(opacity=0);
-            opacity: 0;
-            outline: none;
-            background: white;
-            cursor: pointer;
-            display: block;
-        }
-        
-        .uploaded-doc {
-            display: none;
-        }
-        
-        .doc-uploaded .upload-btn {
-            display: none;
-        }
-        
-        .doc-uploaded .uploaded-doc {
-            display: flex;
-        }
+.btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.step-content {
+    display: none;
+}
+
+.step-content.active {
+    display: block;
+}
+
+.upload-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-container input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    display: block;
+}
+
+.uploaded-doc {
+    display: none;
+}
+
+.doc-uploaded .upload-btn {
+    display: none;
+}
+
+.doc-uploaded .uploaded-doc {
+    display: flex;
+}
 
 /* input style */
 
@@ -967,6 +1060,10 @@ input[type=number] {
 }
 
 @media (max-width: 576px) {
+    .w-sm-auto {
+        width: auto;
+    }
+
     .w-sm-100 {
         width: 100%;
     }
@@ -987,8 +1084,20 @@ input[type=number] {
         padding-bottom: 24px;
     }
 
+    .fs-sm-20 {
+        font-size: 20px;
+    }
+
+    .fs-sm-16 {
+        font-size: 16px;
+    }
+
     .fs-sm-14 {
         font-size: 14px;
+    }
+
+    .gap-sm-6 {
+        gap: 6px;
     }
 }
 
