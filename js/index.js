@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
 // login modal
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -211,5 +210,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     wellcome.addEventListener('click', function(e) {
         e.stopPropagation();
+    });
+});
+
+
+// isotope 
+
+var portfolio = $('#portfolio-container').isotope({
+    originLeft: false
+});
+$('#portfolio-filter > div').on('click', function () {
+    $("#portfolio-filter > div").removeClass('active');
+    $(this).addClass('active');
+    portfolio.isotope({
+        filter: $(this).data('filter')
     });
 });

@@ -18,7 +18,7 @@
 
   <!-- login to pannel -->
 
-  <div id="modalbox">
+  <div id="modalbox" class="p-3">
     <form id="panellogin" class="rounded-16 border-gray bg-white pb-36 max-w-398 mx-auto my-4">
       <p class="text-main fs-20 fw-bold p-20 border-b-gray">ورود به پنل لیزینگ کارآمد</p>
       <div class="mt-4 px-4">
@@ -356,751 +356,1395 @@
           <img alt="icon" src="images/icons/Vote.svg" class="flex-shrink-0">
           <p class="mb-0 fw-bold text-main">اعتبار دلخواه خود را از میان طرح‌های فعال انتخاب کنید.</p>
         </div>
-        <div class="mt-0 row mx-0 g-2 g-xxl-4">
-          <div class="col-lg-6 pe-0">
-            <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
-              <div class="d-flex align-items-center justify-content-between gap-2">
-                <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
-                  <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
-                    <img alt="img" src="images/555555 1.png">
+        <div id="portfolio-filter" class="mt-3 mb-3 d-flex align-items-center flex-wrap gap-12">
+          <div data-filter="*"
+            class="active cursor-pointer tabisotope transition d-flex align-items-center justify-content-center gap-1 py-2 px-3 border-gray rounded-12 text-blue80">
+            <p class="mb-0">همه</p>
+          </div>
+          <div data-filter=".savari"
+            class="cursor-pointer tabisotope transition d-flex align-items-center justify-content-center gap-1 py-2 px-3 border-gray rounded-12 text-blue80">
+            <svg class="car" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.81 17.6977C17.16 17.6977 16.62 17.1677 16.62 16.5177C16.62 15.8677 17.16 15.3377 17.81 15.3377C18.46 15.3377 18.99 15.8677 18.99 16.5177C18.99 17.1677 18.46 17.6977 17.81 17.6977ZM6.75 17.6977C6.09 17.6977 5.56 17.1677 5.56 16.5177C5.56 15.8677 6.09 15.3377 6.75 15.3377C7.4 15.3377 7.93 15.8677 7.93 16.5177C7.93 17.1677 7.4 17.6977 6.75 17.6977ZM6.493 6.86773C6.545 6.70573 6.65 6.56073 6.789 6.45873C6.927 6.35873 7.097 6.30273 7.267 6.30273H10.007C10.1175 6.30273 10.207 6.39228 10.207 6.50273V9.51773C10.207 9.62819 10.1175 9.71773 10.007 9.71773H5.93138C5.79813 9.71773 5.70214 9.58989 5.73932 9.46194L6.493 6.86773ZM14.554 6.30273C14.647 6.31273 14.722 6.32373 14.792 6.36473C14.866 6.40773 14.925 6.47073 14.967 6.54973L16.5204 9.42261C16.5925 9.55586 16.496 9.71773 16.3445 9.71773H11.907C11.7965 9.71773 11.707 9.62819 11.707 9.51773V6.50273C11.707 6.39228 11.7965 6.30273 11.907 6.30273H14.554ZM10.65 12.7377C10.65 12.3277 10.99 11.9877 11.4 11.9877H12.5C12.91 11.9877 13.25 12.3277 13.25 12.7377C13.25 13.1577 12.91 13.4877 12.5 13.4877H11.4C10.99 13.4877 10.65 13.1577 10.65 12.7377ZM22.14 10.5777C21.6 10.0377 20.85 9.71773 20.08 9.71773H18.385L16.29 5.84173C16.122 5.52473 15.869 5.25973 15.555 5.07273C15.244 4.88973 14.884 4.80573 14.541 4.80273H7.267C6.781 4.80273 6.296 4.96073 5.903 5.24773C5.505 5.53973 5.215 5.94073 5.059 6.42873L4.096 9.73873C3.448 9.80873 2.829 10.1087 2.36 10.5777C1.81 11.1177 1.5 11.8777 1.5 12.6377V14.3477C1.5 15.1277 1.8 15.8577 2.36 16.4177C2.84 16.8977 3.48 17.1977 4.16 17.2577C4.49 18.3777 5.53 19.1977 6.75 19.1977C7.96 19.1977 9 18.3777 9.32 17.2677H15.23C15.55 18.3777 16.59 19.1977 17.81 19.1977C19.03 19.1977 20.07 18.3777 20.39 17.2577C21.05 17.1777 21.67 16.8877 22.15 16.4077C22.7 15.8577 23 15.1277 23 14.3477V12.6377C23 11.8777 22.69 11.1177 22.14 10.5777Z"
+                fill="#7D87A1" />
+              <script xmlns="" />
+            </svg>
+            <p class="mb-0">سواری</p>
+          </div>
+          <div data-filter=".sangin"
+            class="cursor-pointer tabisotope transition d-flex align-items-center justify-content-center gap-1 py-2 px-3 border-gray rounded-12 text-blue80">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.3877 4.20825H12.3174C12.1073 4.21134 11.9065 4.29638 11.759 4.44607C11.6115 4.59576 11.5292 4.79772 11.5293 5.00786V13.0787C11.5306 13.183 11.5081 13.2855 11.4632 13.3797C11.4183 13.4739 11.352 13.5573 11.2702 13.6221C11.1884 13.6868 11.093 13.7322 10.991 13.7542C10.889 13.7762 10.7832 13.7736 10.682 13.7485L2.52963 11.3956C2.38022 11.357 2.24726 11.2708 2.15165 11.1497C2.05604 11.0286 2.00282 10.8801 2 10.7258V5.96027C1.99997 5.77821 2.07169 5.60414 2.19933 5.4743C2.32696 5.34447 2.50039 5.26944 2.68243 5.26636H11.5293"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M9.96364 17.975C9.96494 18.1523 9.94109 18.3297 9.89299 18.4999C9.7862 18.9081 9.55263 19.2676 9.22837 19.5246C8.90411 19.7816 8.50731 19.9209 8.09903 19.9209C7.69075 19.9209 7.29396 19.7816 6.9697 19.5246C6.64544 19.2676 6.41187 18.9081 6.30508 18.4999C6.25698 18.3297 6.23313 18.1523 6.23443 17.975C6.2717 17.4892 6.48396 17.0358 6.82954 16.7051C7.17512 16.3744 7.6286 16.1909 8.09903 16.1909C8.56947 16.1909 9.02238 16.3744 9.36796 16.7051C9.71353 17.0358 9.92636 17.4892 9.96364 17.975Z"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M19.4461 17.975C19.4474 18.1523 19.4235 18.3297 19.3754 18.4999C19.2686 18.9081 19.0351 19.2676 18.7108 19.5246C18.3865 19.7816 17.9897 19.9209 17.5815 19.9209C17.1732 19.9209 16.7764 19.7816 16.4521 19.5246C16.1279 19.2676 15.8943 18.9081 15.7875 18.4999C15.7394 18.3297 15.7156 18.1523 15.7168 17.975C15.7541 17.4892 15.9664 17.0358 16.312 16.7051C16.6575 16.3744 17.111 16.1909 17.5815 16.1909C18.0519 16.1909 18.5048 16.3744 18.8504 16.7051C19.196 17.0358 19.4088 17.4892 19.4461 17.975Z"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15.6055 17.9253H10.0762" stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5.92893 17.9732H4.42334C4.19028 17.9701 3.96777 17.8761 3.80296 17.7112C3.63814 17.5464 3.54406 17.3239 3.54102 17.0909V15.5847"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14.0332 12.0193H18.5626" stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M13.9648 17.879V7.29105C13.9648 7.082 14.0479 6.88052 14.1958 6.7327C14.3436 6.58488 14.5439 6.50293 14.753 6.50293H17.3414C17.6327 6.50365 17.9197 6.57456 18.1777 6.70972C18.4358 6.84489 18.6569 7.03936 18.8234 7.27841L21.6823 11.4315C21.898 11.7374 22.0094 12.1041 22 12.4782V15.9259C22 16.4782 21.7805 17.0071 21.39 17.3976C20.9995 17.7881 20.4699 18.0076 19.9177 18.0076H19.6"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8.70508 8.76074V12.984" stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M5.23633 9.47876V12.0198" stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <script xmlns="" />
+            </svg>
+            <p class="mb-0">سنگین</p>
+          </div>
+          <div data-filter=".trailer"
+            class="cursor-pointer tabisotope transition d-flex align-items-center justify-content-center gap-1 py-2 px-3 border-gray rounded-12 text-blue80">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.5962 17.2576H8.87891" stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M6.92953 19.3871C8.0092 19.3871 8.88445 18.5119 8.88445 17.4322C8.88445 16.3525 8.0092 15.4773 6.92953 15.4773C5.84986 15.4773 4.97461 16.3525 4.97461 17.4322C4.97461 18.5119 5.84986 19.3871 6.92953 19.3871Z"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M17.5575 19.3871C18.6371 19.3871 19.5124 18.5119 19.5124 17.4322C19.5124 16.3525 18.6371 15.4773 17.5575 15.4773C16.4778 15.4773 15.6025 16.3525 15.6025 17.4322C15.6025 18.5119 16.4778 19.3871 17.5575 19.3871Z"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M4.92075 17.571H4.16336C2.98535 17.571 2 16.5857 2 15.4077V6.7764C2 6.20264 2.22809 5.65254 2.6338 5.24683C3.03951 4.84112 3.5896 4.61304 4.16336 4.61304H17.7252C19.0521 4.61304 20.1517 5.67839 20.1517 7.00533C20.1517 7.21514 19.9816 7.38522 19.7718 7.38522H18.6996C18.4809 7.38522 18.3036 7.56253 18.3036 7.78124C18.3036 10.3743 19.1459 11.3613 20.9051 12.3552C21.5647 12.7278 21.9998 13.1986 21.9998 13.9562V15.7684C21.9998 16.873 21.1044 17.5499 19.9998 17.5499H19.6897"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10.8684 10.8188C11.1445 10.8188 11.3684 10.5949 11.3684 10.3188V7.8855C11.3684 7.60936 11.1445 7.3855 10.8684 7.3855H5.00195C4.72581 7.3855 4.50195 7.60935 4.50195 7.8855V10.3188C4.50195 10.5949 4.72581 10.8188 5.00195 10.8188H10.8684Z"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M18.6371 7.3855H14.4434C14.1672 7.3855 13.9434 7.60935 13.9434 7.8855V10.3188C13.9434 10.5949 14.1672 10.8188 14.4434 10.8188H19.0334"
+                stroke="#7D87A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <script xmlns="" />
+            </svg>
+            <p class="mb-0">تریلر</p>
+          </div>
+        </div>
+        <div id="portfolio-container" class="h-auto">
+          <div class="mt-0 row mx-0 g-2 g-xxl-4 savari">
+            <div class="col-md-6 pe-0">
+              <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
+                    <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
+                      <img alt="img" src="images/555555 1.png">
+                    </div>
+                    <p class="mb-0">ویژه لوکانو</p>
                   </div>
-                  <p class="mb-0">ویژه لوکانو</p>
-                </div>
-                <div class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
-                  <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
-                  <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
-                  <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                </div>
-              </div>
-              <div class="mt-4 row mx-0 g-2">
-                <div class="col-xl-6 pe-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payTime active">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">12 ماهه</p>
-                      </div>
-                      <div data-id="2" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">18 ماهه</p>
-                      </div>
-                      <div data-id="3" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">24 ماهه</p>
-                      </div>
-                    </div>
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
+                  <div
+                    class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
+                    <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                    <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                    <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                   </div>
                 </div>
-                <div class="col-xl-6 ps-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payMount active">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                <div class="mt-4 row mx-0 g-2">
+                  <div class="col-xl-6 pe-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payTime active">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">12 ماهه</p>
+                        </div>
+                        <div data-id="2" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">18 ماهه</p>
+                        </div>
+                        <div data-id="3" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">24 ماهه</p>
                         </div>
                       </div>
-                      <div data-id="2" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">890,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 ps-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payMount active">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="2" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">890,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="3" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">1,200,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
                         </div>
                       </div>
-                      <div data-id="3" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">1,200,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                        </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="payTable active" data-id="1">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                       </div>
                     </div>
                     <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="2">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div
+                      class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
+                      <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
+                      <p class="mb-0">ضمانت:</p>
+                      <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
+                    </div>
+                    <a
+                      class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
+                      <p class="mb-0">درخواست وام</p>
+                      <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
                         <script xmlns="" />
                       </svg>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="mt-4">
-                <div class="payTable active" data-id="1">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+            </div>
+            <div class="col-md-6 ps-0">
+              <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
+                    <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
+                      <img alt="img" src="images/555555 1.png">
+                    </div>
+                    <p class="mb-0">لوکانو L7</p>
                   </div>
                   <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                    class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
+                    <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                    <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                    <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  </div>
+                </div>
+                <div class="mt-4 row mx-0 g-2">
+                  <div class="col-xl-6 pe-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payTime active">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">12 ماهه</p>
+                        </div>
+                        <div data-id="2" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">18 ماهه</p>
+                        </div>
+                        <div data-id="3" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">24 ماهه</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  <div class="col-xl-6 ps-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payMount active">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="2" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">890,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="3" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">1,200,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="payTable" data-id="2">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                <div class="mt-4">
+                  <div class="payTable active" data-id="1">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
                     </div>
                   </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  <div class="payTable" data-id="2">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="payTable" data-id="3">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                <div class="mt-4">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div
+                      class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
+                      <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
+                      <p class="mb-0">ضمانت:</p>
+                      <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
                     </div>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
+                    <a
+                      class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
+                      <p class="mb-0">درخواست وام</p>
+                      <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <script xmlns="" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="mt-4">
-                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-                  <div
-                    class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
-                    <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
-                    <p class="mb-0">ضمانت:</p>
-                    <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
+            </div>
+            <div class="col-md-6 pe-0">
+              <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
+                    <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
+                      <img alt="img" src="images/555555 1.png">
+                    </div>
+                    <p class="mb-0">ویژه لوکانو</p>
                   </div>
-                  <a
-                    class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
-                    <p class="mb-0">درخواست وام</p>
-                    <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <script xmlns="" />
-                    </svg>
-                  </a>
+                  <div
+                    class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
+                    <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                    <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                    <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  </div>
+                </div>
+                <div class="mt-4 row mx-0 g-2">
+                  <div class="col-xl-6 pe-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payTime active">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">12 ماهه</p>
+                        </div>
+                        <div data-id="2" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">18 ماهه</p>
+                        </div>
+                        <div data-id="3" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">24 ماهه</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 ps-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payMount active">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="2" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">890,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="3" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">1,200,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="payTable active" data-id="1">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="2">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div
+                      class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
+                      <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
+                      <p class="mb-0">ضمانت:</p>
+                      <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
+                    </div>
+                    <a
+                      class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
+                      <p class="mb-0">درخواست وام</p>
+                      <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <script xmlns="" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 ps-0">
+              <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
+                    <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
+                      <img alt="img" src="images/555555 1.png">
+                    </div>
+                    <p class="mb-0">لوکانو L7</p>
+                  </div>
+                  <div
+                    class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
+                    <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                    <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                    <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  </div>
+                </div>
+                <div class="mt-4 row mx-0 g-2">
+                  <div class="col-xl-6 pe-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payTime active">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">12 ماهه</p>
+                        </div>
+                        <div data-id="2" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">18 ماهه</p>
+                        </div>
+                        <div data-id="3" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">24 ماهه</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 ps-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payMount active">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="2" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">890,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="3" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">1,200,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="payTable active" data-id="1">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="2">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div
+                      class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
+                      <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
+                      <p class="mb-0">ضمانت:</p>
+                      <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
+                    </div>
+                    <a
+                      class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
+                      <p class="mb-0">درخواست وام</p>
+                      <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <script xmlns="" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 ps-0">
-            <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
-              <div class="d-flex align-items-center justify-content-between gap-2">
-                <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
-                  <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
-                    <img alt="img" src="images/555555 1.png">
+          <div class="mt-0 row mx-0 g-2 g-xxl-4 sangin">
+            <div class="col-md-6 pe-0">
+              <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
+                    <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
+                      <img alt="img" src="images/555555 1.png">
+                    </div>
+                    <p class="mb-0">ویژه لوکانو</p>
                   </div>
-                  <p class="mb-0">لوکانو L7</p>
-                </div>
-                <div class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
-                  <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
-                  <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
-                  <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                </div>
-              </div>
-              <div class="mt-4 row mx-0 g-2">
-                <div class="col-xl-6 pe-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payTime active">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">12 ماهه</p>
-                      </div>
-                      <div data-id="2" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">18 ماهه</p>
-                      </div>
-                      <div data-id="3" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">24 ماهه</p>
-                      </div>
-                    </div>
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
+                  <div
+                    class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
+                    <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                    <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                    <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                   </div>
                 </div>
-                <div class="col-xl-6 ps-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payMount active">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                <div class="mt-4 row mx-0 g-2">
+                  <div class="col-xl-6 pe-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payTime active">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">12 ماهه</p>
+                        </div>
+                        <div data-id="2" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">18 ماهه</p>
+                        </div>
+                        <div data-id="3" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">24 ماهه</p>
                         </div>
                       </div>
-                      <div data-id="2" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">890,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 ps-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payMount active">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="2" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">890,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="3" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">1,200,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
                         </div>
                       </div>
-                      <div data-id="3" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">1,200,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                        </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="payTable active" data-id="1">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                       </div>
                     </div>
                     <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="2">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div
+                      class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
+                      <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
+                      <p class="mb-0">ضمانت:</p>
+                      <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
+                    </div>
+                    <a
+                      class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
+                      <p class="mb-0">درخواست وام</p>
+                      <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
                         <script xmlns="" />
                       </svg>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="mt-4">
-                <div class="payTable active" data-id="1">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+            </div>
+            <div class="col-md-6 ps-0">
+              <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
+                    <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
+                      <img alt="img" src="images/555555 1.png">
+                    </div>
+                    <p class="mb-0">لوکانو L7</p>
                   </div>
                   <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                    class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
+                    <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                    <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                    <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  </div>
+                </div>
+                <div class="mt-4 row mx-0 g-2">
+                  <div class="col-xl-6 pe-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payTime active">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">12 ماهه</p>
+                        </div>
+                        <div data-id="2" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">18 ماهه</p>
+                        </div>
+                        <div data-id="3" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">24 ماهه</p>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  <div class="col-xl-6 ps-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payMount active">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="2" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">890,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="3" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">1,200,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="payTable" data-id="2">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                <div class="mt-4">
+                  <div class="payTable active" data-id="1">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
                     </div>
                   </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                  <div class="payTable" data-id="2">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payTable" data-id="3">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="payTable" data-id="3">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                <div class="mt-4">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div
+                      class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
+                      <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
+                      <p class="mb-0">ضمانت:</p>
+                      <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
                     </div>
+                    <a
+                      class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
+                      <p class="mb-0">درخواست وام</p>
+                      <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <script xmlns="" />
+                      </svg>
+                    </a>
                   </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-4">
-                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-                  <div
-                    class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
-                    <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
-                    <p class="mb-0">ضمانت:</p>
-                    <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
-                  </div>
-                  <a
-                    class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
-                    <p class="mb-0">درخواست وام</p>
-                    <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <script xmlns="" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 pe-0">
-            <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
-              <div class="d-flex align-items-center justify-content-between gap-2">
-                <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
-                  <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
-                    <img alt="img" src="images/555555 1.png">
+          <div class="mt-0 row mx-0 g-2 g-xxl-4 trailer">
+            <div class="col-md-6 pe-0">
+              <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
+                    <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
+                      <img alt="img" src="images/555555 1.png">
+                    </div>
+                    <p class="mb-0">ویژه لوکانو</p>
                   </div>
-                  <p class="mb-0">ویژه لوکانو</p>
-                </div>
-                <div class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
-                  <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
-                  <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
-                  <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                </div>
-              </div>
-              <div class="mt-4 row mx-0 g-2">
-                <div class="col-xl-6 pe-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payTime active">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">12 ماهه</p>
-                      </div>
-                      <div data-id="2" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">18 ماهه</p>
-                      </div>
-                      <div data-id="3" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">24 ماهه</p>
-                      </div>
-                    </div>
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
+                  <div
+                    class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
+                    <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                    <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                    <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                   </div>
                 </div>
-                <div class="col-xl-6 ps-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
-                    <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payMount active">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                <div class="mt-4 row mx-0 g-2">
+                  <div class="col-xl-6 pe-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payTime active">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">12 ماهه</p>
+                        </div>
+                        <div data-id="2" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">18 ماهه</p>
+                        </div>
+                        <div data-id="3" class="text-center text-main payTime">
+                          <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                          <p class="fw-bold mb-0">24 ماهه</p>
                         </div>
                       </div>
-                      <div data-id="2" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">890,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 ps-xl-0">
+                    <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div data-id="1" class="text-center text-main payMount active">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="2" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">890,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
+                        </div>
+                        <div data-id="3" class="text-center text-main payMount">
+                          <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                          <div class="d-flex align-items-center justify-content-center gap-1">
+                            <p class="fw-bold mb-0">1,200,000,000</p>
+                            <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                          </div>
                         </div>
                       </div>
-                      <div data-id="3" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">1,200,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                        </div>
+                      <div
+                        class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="payTable active" data-id="1">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                       </div>
                     </div>
                     <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="mt-4">
-                <div class="payTable active" data-id="1">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                </div>
-                <div class="payTable" data-id="2">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                </div>
-                <div class="payTable" data-id="3">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-4">
-                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-                  <div
-                    class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
-                    <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
-                    <p class="mb-0">ضمانت:</p>
-                    <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
-                  </div>
-                  <a
-                    class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
-                    <p class="mb-0">درخواست وام</p>
-                    <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <script xmlns="" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 ps-0">
-            <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
-              <div class="d-flex align-items-center justify-content-between gap-2">
-                <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
-                  <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
-                    <img alt="img" src="images/555555 1.png">
-                  </div>
-                  <p class="mb-0">لوکانو L7</p>
-                </div>
-                <div class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
-                  <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
-                  <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
-                  <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                </div>
-              </div>
-              <div class="mt-4 row mx-0 g-2">
-                <div class="col-xl-6 pe-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                  <div class="payTable" data-id="2">
                     <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
                     </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payTime active">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">12 ماهه</p>
-                      </div>
-                      <div data-id="2" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">18 ماهه</p>
-                      </div>
-                      <div data-id="3" class="text-center text-main payTime">
-                        <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                        <p class="fw-bold mb-0">24 ماهه</p>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                       </div>
                     </div>
                     <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-xl-6 ps-xl-0">
-                  <div class="rounded-8 bg-background d-flex align-items-center justify-content-between gap-2 p-12">
+                  <div class="payTable" data-id="3">
                     <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown rightbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1.5L5 5.5L1 9.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
+                      <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
                     </div>
-                    <div>
-                      <div data-id="1" class="text-center text-main payMount active">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                        </div>
-                      </div>
-                      <div data-id="2" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">890,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                        </div>
-                      </div>
-                      <div data-id="3" class="text-center text-main payMount">
-                        <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                        <div class="d-flex align-items-center justify-content-center gap-1">
-                          <p class="fw-bold mb-0">1,200,000,000</p>
-                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                        </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">پیش‌پرداخت:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                       </div>
                     </div>
                     <div
-                      class="w-32 h-32 rounded-4 cursor-pointer bg-lightbrown leftbtn btnhover1 border-brown flex-shrink-0 d-flex align-items-center justify-content-center">
-                      <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 9.5L1 5.5L5 1.5" stroke="#987429" stroke-width="1.5" stroke-linecap="round"
+                      class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                      <p class="mb-0">مبلغ هر قسط:</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
+                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div
+                      class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
+                      <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
+                      <p class="mb-0">ضمانت:</p>
+                      <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
+                    </div>
+                    <a
+                      class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
+                      <p class="mb-0">درخواست وام</p>
+                      <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
                         <script xmlns="" />
                       </svg>
-                    </div>
+                    </a>
                   </div>
-                </div>
-              </div>
-              <div class="mt-4">
-                <div class="payTable active" data-id="1">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر ۲ ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۲,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                </div>
-                <div class="payTable" data-id="2">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 3 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">3,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                </div>
-                <div class="payTable" data-id="3">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">فاصله زمانی پرداخت اقساط:</p>
-                    <p class="mb-0 fw-bold">هر 4 ماه یکبار</p>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">پیش‌پرداخت:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">4,۳۷۰,۳۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
-                    <p class="mb-0">مبلغ هر قسط:</p>
-                    <div class="d-flex align-items-center gap-1">
-                      <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
-                      <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-4">
-                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-                  <div
-                    class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
-                    <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
-                    <p class="mb-0">ضمانت:</p>
-                    <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
-                  </div>
-                  <a
-                    class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
-                    <p class="mb-0">درخواست وام</p>
-                    <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <script xmlns="" />
-                    </svg>
-                  </a>
                 </div>
               </div>
             </div>
@@ -1110,7 +1754,9 @@
     </div>
   </section>
 
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/sidebar.js"></script>
   <script src="js/darkmode.js"></script>

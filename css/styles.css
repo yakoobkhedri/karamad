@@ -4,31 +4,48 @@
     --color-blue80: #7D87A1;
     --color-blue90: #6B7693;
     --color-blue: #0F73E6;
+    --color-blue200: #465378;
     --color-gray: #DADDE4;
     --color-gray2: #E1E7F0;
     --color-gray3: #B5BAC9;
     --color-gray4: #E5E6EB;
     --color-gray5: #FAFAFA;
+    --color-gray6: #F5F7FA;
+    --color-gray7: #F1F1F4;
     --color-white: #fff;
+    --color-green:#40750E;
+    --color-green2:#E9FACD;
+    --color-red:#B20E19;
+    --color-red2:#FEEAEA;
     --color-background: #F6F8FE;
     --color-brown: #C99B37;
+    --color-brown2: #B86A1D;
     --color-lightbrown: #DFC388;
+    --color-lightbrown2: #FFF3D6;
 }
 
 [data-theme="dark"] {
     /* تم تاریک (Dark Mode) */
-    --color-primary: #0E2050;
+     --color-primary: #0E2050;
     --color-blue80: #7D87A1;
     --color-blue90: #6B7693;
     --color-blue: #0F73E6;
+    --color-blue200: #465378;
     --color-gray: #DADDE4;
     --color-gray2: #E1E7F0;
     --color-gray3: #B5BAC9;
     --color-gray4: #E5E6EB;
     --color-gray5: #FAFAFA;
+    --color-gray6: #F5F7FA;
+    --color-gray7: #F1F1F4;
     --color-white: #fff;
+    --color-green:#40750E;
+    --color-green2:#E9FACD;
+    --color-red:#B20E19;
+    --color-red2:#FEEAEA;
     --color-background: #F6F8FE;
     --color-brown: #C99B37;
+    --color-brown2: #B86A1D;
     --color-lightbrown: #DFC388;
 }
 
@@ -420,6 +437,10 @@ a {
     padding-right: 12px;
     padding-left: 12px;
 }
+.py-12 {
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
 
 .py-15 {
     padding-bottom: 15px;
@@ -470,6 +491,10 @@ a {
     margin-top: 20px;
 }
 
+.mb-32 {
+    margin-bottom: 32px;
+}
+
 .mt-36 {
     margin-top: 36px;
 }
@@ -491,10 +516,22 @@ a {
     color: var(--color-primary);
 }
 
+.text-green{
+    color: var(--color-green);
+}
+.text-red{
+    color: var(--color-red);
+}
 .text-blue80 {
     color: var(--color-blue80);
 }
 
+.text-blue200{
+    color: var(--color-blue200);
+}
+.text-brown2{
+    color: var(--color-brown2);
+}
 .text-gray4 {
     color: var(--color-gray4);
 }
@@ -607,7 +644,18 @@ a {
 .bg-gray4 {
     background-color: var(--color-gray4) !important;
 }
-
+.bg-gray6 {
+    background-color: var(--color-gray6) !important;
+}
+.bg-gray7 {
+    background-color: var(--color-gray7) !important;
+}
+.bg-green2{
+    background-color: var(--color-green2);
+}
+.bg-red2{
+    background-color: var(--color-red2);
+}
 .bg-background {
     background-color: var(--color-background);
 }
@@ -619,7 +667,9 @@ a {
 .bg-lightbrown {
     background-color: var(--color-lightbrown);
 }
-
+.bg-lightbrown2{
+    background-color: var(--color-lightbrown2);
+}
 .bg-gradient-1 {
     background: linear-gradient(0deg, #B5BAC9, #B5BAC9),
         linear-gradient(0deg, #E5E8F3, #E5E8F3);
@@ -987,6 +1037,23 @@ input[type=number] {
     left: 0;
     bottom: -10px;
     background-color: var(--color-brown);
+}
+
+.tabisotope svg path{
+    transition: all .4s;
+}
+
+.tabisotope:hover,.tabisotope.active{
+    background-color: var(--color-brown);
+    color: var(--color-primary);
+    font-weight: bold;
+    border: 1px solid var(--color-gray)
+}
+.tabisotope:hover svg path,.tabisotope.active svg path{
+    stroke: var(--color-primary);
+}
+.tabisotope:hover svg.car path,.tabisotope.active svg.car path{
+    fill: var(--color-primary);
 }
 
 
