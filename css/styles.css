@@ -1,6 +1,7 @@
 :root {
     /* تم روشن (Light Mode) */
     --color-primary: #0E2050;
+    --color-blue70: #9098AE;
     --color-blue80: #7D87A1;
     --color-blue90: #6B7693;
     --color-blue: #0F73E6;
@@ -26,7 +27,8 @@
 
 [data-theme="dark"] {
     /* تم تاریک (Dark Mode) */
-     --color-primary: #0E2050;
+    --color-primary: #0E2050;
+    --color-blue70: #9098AE;
     --color-blue80: #7D87A1;
     --color-blue90: #6B7693;
     --color-blue: #0F73E6;
@@ -47,6 +49,7 @@
     --color-brown: #C99B37;
     --color-brown2: #B86A1D;
     --color-lightbrown: #DFC388;
+    --color-lightbrown2: #FFF3D6;
 }
 
 @font-face {
@@ -135,6 +138,11 @@ a {
 
 .max-w-450 {
     max-width: 450px;
+    width: 100%;
+}
+
+.max-w-482 {
+    max-width: 482px;
     width: 100%;
 }
 
@@ -306,6 +314,10 @@ a {
     width: 40px;
 }
 
+.w-48 {
+    width: 48px;
+}
+
 .w-58 {
     width: 58px;
 }
@@ -373,6 +385,10 @@ a {
 
 .h-40 {
     height: 40px;
+}
+
+.h-48 {
+    height: 48px;
 }
 
 .h-58 {
@@ -483,6 +499,10 @@ a {
     margin-bottom: 8px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
 .mt-12 {
     margin-top: 12px;
 }
@@ -521,6 +541,9 @@ a {
 }
 .text-red{
     color: var(--color-red);
+}
+.text-blue70 {
+    color: var(--color-blue70);
 }
 .text-blue80 {
     color: var(--color-blue80);
@@ -663,7 +686,9 @@ a {
 .bg-brown {
     background-color: var(--color-brown);
 }
-
+.bg-brown2 {
+    background-color: var(--color-brown2);
+}
 .bg-lightbrown {
     background-color: var(--color-lightbrown);
 }
