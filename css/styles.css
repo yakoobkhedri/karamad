@@ -329,13 +329,21 @@ a {
 .w-76 {
     width: 76px;
 }
-
+.w-80 {
+    width: 80px;
+}
 .w-85 {
     width: 85px;
 }
-
+.w-90 {
+    width: 90px;
+}
 .w-97 {
     width: 97px;
+}
+
+.w-101 {
+    width: 101px;
 }
 
 .w-122 {
@@ -401,6 +409,10 @@ a {
 
 .h-88-5 {
     height: 88.5vh;
+}
+
+.h-101 {
+    height: 101px;
 }
 
 /* min height */
@@ -548,7 +560,9 @@ a {
 .text-blue80 {
     color: var(--color-blue80);
 }
-
+.text-blue90{
+    color: var(--color-blue90);
+}
 .text-blue200{
     color: var(--color-blue200);
 }
@@ -699,7 +713,6 @@ a {
     background: linear-gradient(0deg, #B5BAC9, #B5BAC9),
         linear-gradient(0deg, #E5E8F3, #E5E8F3);
 }
-
 /* box shadow */
 .shadow-1 {
     box-shadow: 0px 0px 15px 0px #0000001C;
@@ -738,6 +751,9 @@ a {
     border-radius: 24px;
 }
 
+.rounded-25 {
+    border-radius: 25px;
+}
 /* outline-none */
 .outline-none {
     outline: none;
