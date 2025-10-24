@@ -362,6 +362,10 @@ a {
     width: 153px;
 }
 
+.w-155 {
+    width: 155px;
+}
+
 .w-244 {
     width: 244px;
 }
@@ -489,10 +493,13 @@ a {
     padding-left: 28px;
 }
 
+.px-34 {
+    padding-right: 34px;
+    padding-left: 34px;
+}
 .pb-36 {
     padding-bottom: 36px;
 }
-
 .py-40 {
     padding-bottom: 40px;
     padding-top: 40px;
@@ -872,7 +879,8 @@ input[type=number] {
 .btnhover2,
 .btnhover2 svg path,
 .btnhover3,
-.btnhover3 svg path {
+.btnhover3 svg path,
+.textHover1,.textHover1 svg path {
     transition: all .4s;
 }
 
@@ -898,6 +906,12 @@ input[type=number] {
 .btnhover3:hover svg path,
 .btnhover3.active svg path {
     stroke: var(--color-primary);
+}
+.textHover1:hover{
+    color: var(--color-primary);
+}
+.textHover1:hover svg path{
+    fill: var(--color-primary);
 }
 
 /* darkmodetoggle */
