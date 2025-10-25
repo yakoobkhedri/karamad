@@ -357,7 +357,9 @@ a {
 .w-130 {
     width: 130px;
 }
-
+.w-140 {
+    width: 140px;
+}
 .w-153 {
     width: 153px;
 }
@@ -365,7 +367,9 @@ a {
 .w-155 {
     width: 155px;
 }
-
+.w-180 {
+    width: 180px;
+}
 .w-244 {
     width: 244px;
 }
@@ -525,7 +529,9 @@ a {
 .mt-12 {
     margin-top: 12px;
 }
-
+.mb-12 {
+    margin-bottom: 12px;
+}
 .mt-20 {
     margin-top: 20px;
 }
