@@ -325,7 +325,9 @@ a {
 .w-64 {
     width: 64px;
 }
-
+.w-74 {
+    width: 74px;
+}
 .w-76 {
     width: 76px;
 }
@@ -434,7 +436,9 @@ a {
 .min-h-97 {
     min-height: 97px;
 }
-
+.min-h-200 {
+    min-height: 200px;
+}
 /* z index */
 .z-0 {
     z-index: 0;
@@ -1118,8 +1122,20 @@ input[type=number] {
 .tabisotope:hover svg.car path,.tabisotope.active svg.car path{
     fill: var(--color-primary);
 }
-
-
+.checktab{
+    transition: all .4s;
+}
+.checktab:hover,.checktab.active{
+    font-weight: bold;
+    color: var(--color-primary);
+    background-color: var(--color-brown);
+}
+#checktabcontent > div{
+    display: none;
+}
+#checktabcontent >div.active{
+    display: flex;
+}
 /* responsive */
 @media (max-width: 1200px) {
     .px-xl-12 {
