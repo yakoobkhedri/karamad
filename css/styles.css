@@ -290,6 +290,9 @@ a {
 }
 
 /* width */
+.w-7vw {
+    width: 7vw;
+}
 .w-12vw {
     width: 12vw;
 }
@@ -374,6 +377,9 @@ a {
 .w-180 {
     width: 180px;
 }
+.w-190 {
+    width: 190px;
+}
 .w-244 {
     width: 244px;
 }
@@ -410,7 +416,9 @@ a {
 .h-48 {
     height: 48px;
 }
-
+.h-54 {
+    height: 54px;
+}
 .h-58 {
     height: 58px;
 }
@@ -609,7 +617,12 @@ a {
 .right-4 {
     right: 4px;
 }
-
+.-right-14 {
+    right: -14px;
+}
+.-right-24 {
+    right: -24px;
+}
 .-right-38 {
     right: -38px;
 }
@@ -683,7 +696,9 @@ a {
 .border-blue90 {
     border: 1px solid var(--color-blue90);
 }
-
+.border-r-warning{
+    border-right: 10px solid #FFB933;
+}
 /* background */
 .bg-main {
     background-color: var(--color-primary);
@@ -1065,7 +1080,11 @@ input[type=number] {
 .radioBtn.active {
     background-color: var(--color-brown);
 }
-
+.radioBtn.radioBtn2:hover,
+.radioBtn.radioBtn2.active {
+    background-color: white;
+    border: 2px solid var(--color-primary);
+}
 .radioBtn:hover svg path,
 .radioBtn.active svg path {
     fill: var(--color-primary);
