@@ -126,11 +126,19 @@ a {
     width: 100%;
 }
 
+.max-w-353 {
+    max-width: 353px;
+    width: 100%;
+}
+
 .max-w-398 {
     max-width: 398px;
     width: 100%;
 }
-
+.max-w-424 {
+    max-width: 424px;
+    width: 100%;
+}
 .max-w-446 {
     max-width: 446px;
     width: 100%;
@@ -356,13 +364,18 @@ a {
 .w-122 {
     width: 122px;
 }
-
+.w-123 {
+    width: 123px;
+}
 .w-124 {
     width: 124px;
 }
 
 .w-130 {
     width: 130px;
+}
+.w-138 {
+    width: 138px;
 }
 .w-140 {
     width: 140px;
@@ -434,7 +447,9 @@ a {
 .h-101 {
     height: 101px;
 }
-
+.h-140 {
+    height: 140px;
+}
 /* min height */
 
 .min-h-90 {
@@ -510,7 +525,10 @@ a {
     padding-right: 28px;
     padding-left: 28px;
 }
-
+.py-29 {
+    padding-bottom: 29px;
+    padding-top: 29px;
+}
 .px-34 {
     padding-right: 34px;
     padding-left: 34px;
@@ -526,7 +544,10 @@ a {
 .pt-40 {
     padding-top: 40px;
 }
-
+.px-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .pb-54 {
     padding-bottom: 54px;
 }
@@ -539,7 +560,10 @@ a {
 .mt-10 {
     margin-top: 10px;
 }
-
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .mt-12 {
     margin-top: 12px;
 }
@@ -1084,6 +1108,12 @@ input[type=number] {
 .radioBtn.radioBtn2.active {
     background-color: white;
     border: 2px solid var(--color-primary);
+}
+.radioBtn.radioBtn2 svg.lastsvg,.radioBtn.radioBtn2:hover svg.firstsvg,.radioBtn.radioBtn2.active svg.firstsvg {
+  display: none !important;
+}
+.radioBtn.radioBtn2:hover svg.lastsvg,.radioBtn.radioBtn2.active svg.lastsvg {
+  display: block !important;
 }
 .radioBtn:hover svg path,
 .radioBtn.active svg path {
