@@ -215,3 +215,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// radio btn
+
+document.addEventListener('DOMContentLoaded', function () {
+    const radioButtons = document.querySelectorAll('.radioBtn');
+
+    radioButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // حذف کلاس active از همه دکمه‌ها
+            radioButtons.forEach(btn => {
+                btn.classList.remove('active');
+                const input = btn.querySelector('input[type="radio"]');
+                input.checked = false;
+            });
+
+            // اضافه کردن کلاس active به دکمه کلیک شده
+            this.classList.add('active');
+            const input = this.querySelector('input[type="radio"]');
+            input.checked = true;
+        });
+    });
+});

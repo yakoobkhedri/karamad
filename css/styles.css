@@ -200,7 +200,11 @@ a {
     transform: translateY(0);
     opacity: 1;
 }
-
+/* checkbox */
+.form-check-input:checked {
+  background-color: var(--color-brown);
+  border-color: var(--color-brown);
+}
 /* font size */
 .fs-8 {
     font-size: 8px;
@@ -620,6 +624,9 @@ a {
 .text-blue200{
     color: var(--color-blue200);
 }
+.text-brown{
+    color: var(--color-brown);
+}
 .text-brown2{
     color: var(--color-brown2);
 }
@@ -926,7 +933,13 @@ input[type=number] {
 .payTime.active {
     display: block;
 }
-
+.bankTab{
+    transition: all .4s;
+    cursor: pointer;
+}
+.bankTab:hover,.bankTab.active{
+    border: 1.5px solid #0E2050;
+}
 /* hover */
 
 .btnhover1,
@@ -1182,8 +1195,11 @@ input[type=number] {
     color: var(--color-primary);
     background-color: var(--color-brown);
 }
-#checktabcontent > div{
+#checktabcontent > div,#bankContent > div,#bankContent > div,#newAcount > div{
     display: none;
+}
+#bankContent > div.active,#bankContent > div.active,#newAcount > div.active{
+    display: block;
 }
 #checktabcontent >div.active{
     display: flex;
@@ -1203,7 +1219,11 @@ input[type=number] {
         right: -20px;
     }
 }
-
+@media (max-width: 1100px) {
+    .w-6w-1100{
+        width: 6vw;
+    }
+}
 @media (max-width: 992px) {
 
     #sidebar {
@@ -1223,7 +1243,9 @@ input[type=number] {
     .h-lg-auto {
         height: auto;
     }
-
+    .w-lg-7vw{
+        width: 7vw;
+    }
     .gap-lg-6 {
         gap: 6px;
     }
@@ -1254,6 +1276,19 @@ input[type=number] {
 
     .fs-md-14 {
         font-size: 14px;
+    }
+       .w-md-3 {
+        width: 3%;
+    }
+
+    .h-md-50 {
+        height: 50px;
+    }
+       .position-md-static {
+        position: static !important;
+    }
+       .pb-md-24px {
+        padding-bottom: 24px;
     }
 }
 

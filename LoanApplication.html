@@ -14,55 +14,74 @@
 
 <body>
 
+  <!-- success Modal -->
+  <div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-482 mx-auto p-sm-3 p-2">
+      <div class="modal-content rounded-16 border-gray bg-white py-3">
+        <img alt="img" src="images/Tick Square.png" class="d-block mx-auto w-48 h-48">
+        <div class="text-main text-center mt-10 pb-3 border-b-gray p-3 pt-0 mb-4">
+          <p class="fs-20 fw-bold mb-1">عملیات با موفقیت انجام شد!</p>
+        </div>
+        <p class="mb-0 fs-14 px-3 text-main text-center">
+          درخواست شما با موفقیت ثبت شد. لطفا پس از واریز پیش‌پرداخت به مبلغ ۱۰۰.۰۰۰ تومان نسبت به ارسال درخواست برای
+          ضامن و تکمیل سایر فرم‌ها اقدام فرمایید.
+        </p>
+        <div class="mt-4 px-3">
+          <a type="button"
+            class="bg-brown cursor-pointer btnhover2 d-flex align-items-center justify-content-center text-main gap-12 w-100 h-40 rounded-8 border-gray fs-14 fw-bold">
+            تایید
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div id="overlay"></div>
 
   <section>
     <div class="d-flex align-items-center justify-content-between gap-2 border-b-gray py-20 px-3 bg-white">
       <div class="d-flex align-items-center gap-44 gap-lg-6">
-        <svg id="openSidebar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-          class="bi bi-list cursor-pointer d-lg-none text-main" viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        <svg id="openSidebar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list cursor-pointer d-lg-none text-main" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
         </svg>
         <a class="d-none d-lg-block"><img alt="logo" src="images/Logo.png"></a>
+        <div class="d-flex align-items-center gap-2">
+          <img alt="img" src="images/Photo.jpg" class="rounded-circle w-40 h-40 border-gray-2">
+          <p class="d-flex align-items-center gap-1 mb-0 text-main">
+            <span class="fw-bold fs-20 fs-md-16">علی بنی‌اسدی <span class="d-none d-md-inline-block">،</span></span>
+            <span class="fs-md-14 d-none d-md-block">به پنل خوش آمدید.</span>
+          </p>
+        </div>
       </div>
       <div class="d-flex align-items-center gap-12">
-        <div id="darkModeToggle"
-          class="darkmodetoggle border-gray rounded-8 p-1 d-flex align-items-center gap-1 w-76 h-40 bg-background day">
+        <div class="d-sm-flex d-none align-items-center gap-1 text-main">
+          <img alt="icon" src="images/icons/Calendar.svg" class="flex-shrink-0">
+          <p class="mb-0">ورود قبل: </p>
+          <p class="mb-0 fw-bold">۱۴۰۴/۰۶/۲۹</p>
+        </div>
+        <div id="darkModeToggle" class="darkmodetoggle border-gray rounded-8 p-1 d-flex align-items-center gap-1 w-76 h-40 bg-background day">
           <div class="w-32 h-100 sun cursor-pointer flex-shrink-0 rounded-6 flex-center position-relative">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12.0001 3V4.3719M12.0001 19.6281V21M21 12.0001H19.6281M4.3719 12.0001H3M18.3638 5.63582L17.3938 6.60589M6.60636 17.3938L5.6363 18.3639M18.3638 18.3639L17.3938 17.3938M6.60636 6.60636L5.6363 5.6363"
-                stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M12.0549 7.80469C14.3725 7.80469 16.2504 9.68351 16.2504 12.0002C16.2504 14.3178 14.3725 16.1966 12.0549 16.1966C9.73723 16.1966 7.85938 14.3178 7.85938 12.0002C7.85938 9.68351 9.73723 7.80469 12.0549 7.80469Z"
-                stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <script xmlns="" />
+              <path d="M12.0001 3V4.3719M12.0001 19.6281V21M21 12.0001H19.6281M4.3719 12.0001H3M18.3638 5.63582L17.3938 6.60589M6.60636 17.3938L5.6363 18.3639M18.3638 18.3639L17.3938 17.3938M6.60636 6.60636L5.6363 5.6363" stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0549 7.80469C14.3725 7.80469 16.2504 9.68351 16.2504 12.0002C16.2504 14.3178 14.3725 16.1966 12.0549 16.1966C9.73723 16.1966 7.85938 14.3178 7.85938 12.0002C7.85938 9.68351 9.73723 7.80469 12.0549 7.80469Z" stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <script xmlns=""></script>
             </svg>
           </div>
           <div class="w-32 h-100 moon cursor-pointer flex-shrink-0 rounded-6 flex-center position-relative">
             <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M14.3233 17.7617C14.3717 17.7765 14.3805 17.8431 14.3354 17.868C10.9169 19.7667 6.52179 19.2633 3.62897 16.3704C0.120312 12.8618 0.127042 7.17577 3.62897 3.67384C6.52852 0.774302 10.9108 0.270172 14.3293 2.17022C14.3737 2.19445 14.365 2.26109 14.3165 2.27589C11.0098 3.2875 8.60087 6.38156 8.60017 10.0221C8.60087 13.6627 11.0098 16.7568 14.3233 17.7617Z"
-                stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <script xmlns="" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3233 17.7617C14.3717 17.7765 14.3805 17.8431 14.3354 17.868C10.9169 19.7667 6.52179 19.2633 3.62897 16.3704C0.120312 12.8618 0.127042 7.17577 3.62897 3.67384C6.52852 0.774302 10.9108 0.270172 14.3293 2.17022C14.3737 2.19445 14.365 2.26109 14.3165 2.27589C11.0098 3.2875 8.60087 6.38156 8.60017 10.0221C8.60087 13.6627 11.0098 16.7568 14.3233 17.7617Z" stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <script xmlns=""></script>
             </svg>
           </div>
         </div>
-        <div
-          class="border-gray cursor-pointer position-relative rounded-8 p-1 d-flex align-items-center justify-content-center w-40 h-40 bg-background">
-          <p
-            class="w-18 h-18 mb-0 rounded-circle text-white bg-main position-absolute -left-8 -top-6 d-flex align-items-center justify-content-center fs-12">
+        <div class="border-gray cursor-pointer position-relative rounded-8 p-1 d-flex align-items-center justify-content-center w-40 h-40 bg-background">
+          <p class="w-18 h-18 mb-0 rounded-circle text-white bg-main position-absolute -left-8 -top-6 d-flex align-items-center justify-content-center fs-12">
             4</p>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M12.0005 1.09961C13.8303 1.09978 15.5855 1.82724 16.8794 3.12109C18.1731 4.41505 18.8999 6.1702 18.8999 8C18.8999 10.9302 19.6369 12.88 20.4146 14.1299C20.7778 14.7136 21.0639 15.1727 21.2554 15.5049C21.3502 15.6694 21.4353 15.8258 21.4976 15.9629C21.5286 16.0313 21.5621 16.1141 21.5884 16.2021C21.6104 16.2762 21.6513 16.4294 21.6362 16.6143C21.6254 16.7465 21.5986 16.9631 21.4751 17.1855C21.3515 17.408 21.1813 17.5449 21.0747 17.624C20.8432 17.7957 20.5741 17.835 20.4819 17.8486C20.3402 17.8696 20.1766 17.8802 20.0093 17.8867C19.6718 17.8999 19.2011 17.9004 18.6118 17.9004H5.38916C4.79977 17.9004 4.32926 17.8999 3.9917 17.8867C3.82422 17.8802 3.66095 17.8696 3.51904 17.8486C3.42767 17.8351 3.15833 17.796 2.92627 17.624C2.81976 17.545 2.64959 17.4081 2.52588 17.1855C2.40228 16.9631 2.37558 16.7465 2.36475 16.6143C2.34962 16.4294 2.3896 16.2761 2.41162 16.2021C2.43792 16.1139 2.4723 16.0314 2.50342 15.9629C2.56573 15.8257 2.65067 15.6696 2.74561 15.5049C2.93705 15.1727 3.22216 14.7137 3.58545 14.1299C4.36314 12.88 5.10006 10.9303 5.1001 8C5.1001 6.17001 5.82758 4.41509 7.12158 3.12109C8.41556 1.82723 10.1706 1.09961 12.0005 1.09961ZM12.0005 2.90039C10.648 2.90039 9.35046 3.43726 8.39404 4.39355C7.43761 5.34999 6.8999 6.6474 6.8999 8C6.89987 11.2498 6.07763 13.532 5.11377 15.0811C4.85515 15.4967 4.64901 15.8306 4.48877 16.0957C4.73194 16.0981 5.02914 16.0996 5.38916 16.0996H18.6118C18.9714 16.0996 19.2683 16.0981 19.5112 16.0957C19.351 15.8307 19.1448 15.4965 18.8862 15.0811C17.9224 13.532 17.1001 11.2498 17.1001 8C17.1001 6.64759 16.5631 5.34995 15.6069 4.39355C14.6506 3.43727 13.3529 2.90056 12.0005 2.90039Z"
-              fill="#0E2050" />
-            <path
-              d="M14.3633 19.364C14.7148 19.0125 15.2852 19.0125 15.6367 19.364C15.9881 19.7155 15.9881 20.286 15.6367 20.6375C14.7115 21.5625 13.294 21.95 12 21.95C10.706 21.9499 9.28851 21.5626 8.36328 20.6375C8.0119 20.2861 8.01207 19.7155 8.36328 19.364C8.71475 19.0125 9.28525 19.0125 9.63672 19.364C10.1105 19.8377 10.9938 20.1501 12 20.1501C13.0062 20.1501 13.8894 19.8377 14.3633 19.364Z"
-              fill="#33426B" />
-            <script xmlns="" />
+            <path d="M12.0005 1.09961C13.8303 1.09978 15.5855 1.82724 16.8794 3.12109C18.1731 4.41505 18.8999 6.1702 18.8999 8C18.8999 10.9302 19.6369 12.88 20.4146 14.1299C20.7778 14.7136 21.0639 15.1727 21.2554 15.5049C21.3502 15.6694 21.4353 15.8258 21.4976 15.9629C21.5286 16.0313 21.5621 16.1141 21.5884 16.2021C21.6104 16.2762 21.6513 16.4294 21.6362 16.6143C21.6254 16.7465 21.5986 16.9631 21.4751 17.1855C21.3515 17.408 21.1813 17.5449 21.0747 17.624C20.8432 17.7957 20.5741 17.835 20.4819 17.8486C20.3402 17.8696 20.1766 17.8802 20.0093 17.8867C19.6718 17.8999 19.2011 17.9004 18.6118 17.9004H5.38916C4.79977 17.9004 4.32926 17.8999 3.9917 17.8867C3.82422 17.8802 3.66095 17.8696 3.51904 17.8486C3.42767 17.8351 3.15833 17.796 2.92627 17.624C2.81976 17.545 2.64959 17.4081 2.52588 17.1855C2.40228 16.9631 2.37558 16.7465 2.36475 16.6143C2.34962 16.4294 2.3896 16.2761 2.41162 16.2021C2.43792 16.1139 2.4723 16.0314 2.50342 15.9629C2.56573 15.8257 2.65067 15.6696 2.74561 15.5049C2.93705 15.1727 3.22216 14.7137 3.58545 14.1299C4.36314 12.88 5.10006 10.9303 5.1001 8C5.1001 6.17001 5.82758 4.41509 7.12158 3.12109C8.41556 1.82723 10.1706 1.09961 12.0005 1.09961ZM12.0005 2.90039C10.648 2.90039 9.35046 3.43726 8.39404 4.39355C7.43761 5.34999 6.8999 6.6474 6.8999 8C6.89987 11.2498 6.07763 13.532 5.11377 15.0811C4.85515 15.4967 4.64901 15.8306 4.48877 16.0957C4.73194 16.0981 5.02914 16.0996 5.38916 16.0996H18.6118C18.9714 16.0996 19.2683 16.0981 19.5112 16.0957C19.351 15.8307 19.1448 15.4965 18.8862 15.0811C17.9224 13.532 17.1001 11.2498 17.1001 8C17.1001 6.64759 16.5631 5.34995 15.6069 4.39355C14.6506 3.43727 13.3529 2.90056 12.0005 2.90039Z" fill="#0E2050"></path>
+            <path d="M14.3633 19.364C14.7148 19.0125 15.2852 19.0125 15.6367 19.364C15.9881 19.7155 15.9881 20.286 15.6367 20.6375C14.7115 21.5625 13.294 21.95 12 21.95C10.706 21.9499 9.28851 21.5626 8.36328 20.6375C8.0119 20.2861 8.01207 19.7155 8.36328 19.364C8.71475 19.0125 9.28525 19.0125 9.63672 19.364C10.1105 19.8377 10.9938 20.1501 12 20.1501C13.0062 20.1501 13.8894 19.8377 14.3633 19.364Z" fill="#33426B"></path>
+            <script xmlns=""></script>
           </svg>
         </div>
       </div>
@@ -318,8 +337,8 @@
           <div class="p-sm-4 p-3">
             <!-- نوار مراحل -->
             <div
-              class="d-flex gap-4 gap-sm-0 flex-column flex-sm-row align-items-center justify-content-center pt-4 pb-sm-24px pb-54 px-4 rounded-16 border-gray2">
-              <div data-id="1" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step active">
+              class="d-flex gap-4 gap-md-0 flex-column flex-md-row align-items-center justify-content-center pt-4 pb-md-24px pb-54 px-4 rounded-16 border-gray2">
+              <div data-id="1" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step active">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -329,12 +348,12 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     درخواست اعتبار</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3"></div>
               </div>
-              <div data-id="2" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
+              <div data-id="2" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -344,12 +363,12 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     اعتبارسنجی</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3"></div>
               </div>
-              <div data-id="3" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
+              <div data-id="3" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -359,12 +378,12 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     نوع ضمانت</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3"></div>
               </div>
-              <div data-id="4" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
+              <div data-id="4" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -374,12 +393,12 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     انتخاب بانک</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3"></div>
               </div>
-              <div data-id="5" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
+              <div data-id="5" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -389,12 +408,12 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     انتخاب اعتبار</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3"></div>
               </div>
-              <div data-id="6" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
+              <div data-id="6" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -404,12 +423,12 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     آپلود مدارک</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3"></div>
               </div>
-              <div data-id="7" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
+              <div data-id="7" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -419,12 +438,12 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-24 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     بررسی مدارک</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3"></div>
               </div>
-              <div data-id="8" class="flex-column flex-sm-row gap-2 gap-sm-0 d-flex align-items-center step">
+              <div data-id="8" class="flex-column flex-md-row gap-2 gap-md-0 d-flex align-items-center step">
                 <div class="position-relative">
                   <div
                     class="w-26 h-26 fs-14 rounded-circle bg-gray3 mx-auto d-flex align-items-center justify-content-center">
@@ -434,10 +453,10 @@
                     </div>
                   </div>
                   <p
-                    class="mb-0 mt-2 mt-sm-0 position-sm-static position-absolute -right-14 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
+                    class="mb-0 mt-2 mt-md-0 position-md-static position-absolute -right-14 -bottom-36 text-blue80 text-nowrap fs-xl-12 fs-14 -right-xl-20">
                     تایید وام</p>
                 </div>
-                <div class="h-3 w-7vw bg-gray4 h-sm-50 w-sm-3 d-none"></div>
+                <div class="h-3 w-7vw w-6w-1100 w-lg-7vw bg-gray4 h-md-50 w-md-3 d-none"></div>
               </div>
             </div>
 
@@ -692,7 +711,7 @@
                 <div class="row align-items-center gx-xxl-4 gy-3 gy-md-0 gx-3 mt-3">
                   <div class="col-md-6 mt-0">
                     <div
-                      class="radioBtn active radioBtn2 rounded-16 h-54 py-1 px-4 position-relative cursor-pointer border-gray2 d-flex align-items-center justify-content-center gap-1">
+                      class="radioBtn radioBtn2 rounded-16 h-54 py-1 px-4 position-relative cursor-pointer border-gray2 d-flex align-items-center justify-content-center gap-1">
                       <svg class="firstsvg" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#B5BAC9" />
@@ -807,77 +826,150 @@
                     <p class="mb-0 fs-14 text-main">ابتدا بانک مورد نظر جهت دریافت تسهیلات را انتخاب کرده و سپس شماره
                       شبای خود را وارد نمایید.</p>
                   </div>
-                  <div class="mt-4 d-flex align-items-center gap-4 flex-wrap">
-                    <div class="rounded-8 border-gray py-29 px-50">
-                      <img alt="img" src="images/Saman - Logo.png" class="w-101 h-140 d-block m-auto">
-                    </div>
-                    <div class="rounded-8 border-gray py-29 px-50">
-                      <img alt="img" src="images/Shahr - Logo.png" class="w-101 h-140 d-block m-auto">
-                    </div>
-                  </div>
-                  <div class="mt-4 max-w-424">
-                    <label class="fw-bold text-main fs-14">شماره شبا خود را وارد کنید - بانک سامان</label>
-                    <div class="mt-2 border-gray rounded-8 h-40 w-100 px-10 d-flex align-items-center gap-2">
-                      <input class="w-100 flex-grow-1 bg-transparent outline-none border-0 h-100">
-                      <img alt="img" src="images/ir.png" class="flex-shrink-0">
-                    </div>
-                    <div class="mt-4 d-flex align-items-center gap-3 flex-wrap">
-                      <button
-                        class="bg-brown btnhover2 d-flex align-items-center justify-content-center text-main gap-1 w-138 h-40 rounded-8 border-gray fs-14 fw-bold">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M16.7072 9.51425C16.7072 5.64023 13.5669 2.5 9.69293 2.5C5.81894 2.5 2.67871 5.64023 2.67871 9.51425C2.67871 13.3883 5.81894 16.5293 9.69293 16.5293C13.5669 16.5293 16.7072 13.3883 16.7072 9.51425Z"
-                            stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M14.4678 14.6533L17.321 17.5" stroke="#0E2050" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.50977 9.52716L9.09492 11.1115L12.2627 7.94287" stroke="#0E2050" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <script xmlns="" />
-                        </svg>
-                        <p class="mb-0">استعلام</p>
-                      </button>
-                      <button
-                        class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 w-138 h-40 rounded-8 border-gray fs-14 fw-bold">
-                        <p class="mb-0">افتتاح حساب آنلاین</p>
-                      </button>
-                    </div>
-                  </div>
-                  <form class="mt-4 ms-xl-5 ps-xl-5">
-                    <div class="d-flex align-items-center gap-xl-4 gap-3 flex-wrap">
-                      <div class="flex-grow-1 max-w-424">
-                        <label class="fw-bold text-main fs-14">شماره شبا</label>
-                        <input value="IR - 3005 6061 1828 0051 2879 5601"
-                          class="text-blue90 w-100 text-start px-10 rounded-8 mt-2 h-40 border-gray input d-block outline-none fs-14">
+                  <div>
+                    <div class="mt-4 d-flex align-items-center gap-4 flex-wrap">
+                      <div data-id="1" class="rounded-8 border-gray py-29 px-50 bankTab flex-grow-1 flex-sm-grow-0">
+                        <img alt="img" src="images/Saman - Logo.png" class="w-101 h-140 d-block m-auto">
                       </div>
-                      <div class="flex-grow-1">
-                        <label class="fw-bold text-main fs-14">نام و نام خانوادگی صاحب حساب</label>
-                        <input value="علی بنی اسدی"
-                          class="text-blue90 w-100 px-10 rounded-8 mt-2 h-40 border-gray input d-block outline-none fs-14">
+                      <div data-id="2" class="rounded-8 border-gray py-29 px-50 bankTab flex-grow-1 flex-sm-grow-0">
+                        <img alt="img" src="images/Shahr - Logo.png" class="w-101 h-140 d-block m-auto">
                       </div>
-                      <div class="flex-grow-1">
-                        <label class="fw-bold text-main fs-14">بانک</label>
-                        <div class="d-flex align-items-center gap-2 border-gray rounded-8 fs-14 mt-2 h-40 px-10">
-                          <img alt="img" src="images/Group.png" class="flex-shrink-0">
-                          <input value="سامان" class="border-0 outline-none text-blue90 w-100 flex-grow-1">
+                    </div>
+                    <div class="mt-4 max-w-424" id="bankContent">
+                      <div data-id="1">
+                        <div>
+                          <label class="fw-bold text-main fs-14">شماره شبا خود را وارد کنید - بانک سامان</label>
+                          <div class="mt-2 border-gray rounded-8 h-40 w-100 px-10 d-flex align-items-center gap-2">
+                            <input class="w-100 flex-grow-1 bg-transparent outline-none border-0 h-100">
+                            <img alt="img" src="images/ir.png" class="flex-shrink-0">
+                          </div>
+                          <div class="mt-4 d-flex align-items-center gap-3 flex-wrap">
+                            <button
+                              class="bg-brown btnhover2 d-flex align-items-center justify-content-center text-main gap-1 w-138 h-40 rounded-8 border-gray fs-14 fw-bold">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M16.7072 9.51425C16.7072 5.64023 13.5669 2.5 9.69293 2.5C5.81894 2.5 2.67871 5.64023 2.67871 9.51425C2.67871 13.3883 5.81894 16.5293 9.69293 16.5293C13.5669 16.5293 16.7072 13.3883 16.7072 9.51425Z"
+                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.4678 14.6533L17.321 17.5" stroke="#0E2050" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.50977 9.52716L9.09492 11.1115L12.2627 7.94287" stroke="#0E2050" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <script xmlns="" />
+                              </svg>
+                              <p class="mb-0">استعلام</p>
+                            </button>
+                            <button
+                              class="bg-white openAcount btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 w-138 h-40 rounded-8 border-gray fs-14 fw-bold">
+                              <p class="mb-0">افتتاح حساب آنلاین</p>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                        <div data-id="2">
+                        <div>
+                          <label class="fw-bold text-main fs-14">شماره شبا خود را وارد کنید - بانک شهر</label>
+                          <div class="mt-2 border-gray rounded-8 h-40 w-100 px-10 d-flex align-items-center gap-2">
+                            <input class="w-100 flex-grow-1 bg-transparent outline-none border-0 h-100">
+                            <img alt="img" src="images/ir.png" class="flex-shrink-0">
+                          </div>
+                          <div class="mt-4 d-flex align-items-center gap-3 flex-wrap">
+                            <button
+                              class="bg-brown btnhover2 d-flex align-items-center justify-content-center text-main gap-1 w-138 h-40 rounded-8 border-gray fs-14 fw-bold">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M16.7072 9.51425C16.7072 5.64023 13.5669 2.5 9.69293 2.5C5.81894 2.5 2.67871 5.64023 2.67871 9.51425C2.67871 13.3883 5.81894 16.5293 9.69293 16.5293C13.5669 16.5293 16.7072 13.3883 16.7072 9.51425Z"
+                                  stroke="#0E2050" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.4678 14.6533L17.321 17.5" stroke="#0E2050" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.50977 9.52716L9.09492 11.1115L12.2627 7.94287" stroke="#0E2050" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round" />
+                                <script xmlns="" />
+                              </svg>
+                              <p class="mb-0">استعلام</p>
+                            </button>
+                            <button
+                              class="bg-white openAcount btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 w-138 h-40 rounded-8 border-gray fs-14 fw-bold">
+                              <p class="mb-0">افتتاح حساب آنلاین</p>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <button
-                      class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 mt-4 w-158 h-40 rounded-8 border-gray fs-14 fw-bold"
-                      style="display: flex;">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.2012 16.5039H16.2358" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path
-                          d="M5.82113 16.6018L7.20992 16.1978C7.95639 15.9803 8.60676 15.5157 9.05334 14.8803L14.3773 7.49771C15.0147 6.62327 14.8223 5.39876 13.9479 4.76139L12.5033 3.70824C11.6291 3.07196 10.4034 3.26439 9.76701 4.13761L4.38462 11.6029C3.97387 12.1879 3.75684 12.8865 3.76282 13.6017L3.77617 15.0815C3.78625 16.1405 4.80449 16.8973 5.82113 16.6018Z"
-                          stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M8.62598 5.73438L13.2273 9.11566" stroke="#9098AE" stroke-width="1.5"
-                          stroke-linecap="round" stroke-linejoin="round" />
-                        <script xmlns="" />
-                      </svg>
-                      <p class="mb-0">ویرایش شماره شبا</p>
-                    </button>
-                  </form>
+                    <div class="mt-4" id="newAcount">
+                      <form data-id="1" class="ms-xl-5 ps-xl-5">
+                        <div class="d-flex align-items-center gap-xl-4 gap-3 flex-wrap">
+                          <div class="flex-grow-1 max-w-424">
+                            <label class="fw-bold text-main fs-14">شماره شبا</label>
+                            <input value="IR - 3005 6061 1828 0051 2879 5601"
+                              class="text-blue90 w-100 text-start px-10 rounded-8 mt-2 h-40 border-gray input d-block outline-none fs-14">
+                          </div>
+                          <div class="flex-grow-1">
+                            <label class="fw-bold text-main fs-14">نام و نام خانوادگی صاحب حساب</label>
+                            <input value="علی بنی اسدی"
+                              class="text-blue90 w-100 px-10 rounded-8 mt-2 h-40 border-gray input d-block outline-none fs-14">
+                          </div>
+                          <div class="flex-grow-1">
+                            <label class="fw-bold text-main fs-14">بانک</label>
+                            <div class="d-flex align-items-center gap-2 border-gray rounded-8 fs-14 mt-2 h-40 px-10">
+                              <img alt="img" src="images/Group.png" class="flex-shrink-0 d-block w-24 h-24">
+                              <input value="سامان" class="border-0 outline-none text-blue90 w-100 flex-grow-1">
+                            </div>
+                          </div>
+                        </div>
+                        <button
+                          class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 mt-4 w-158 h-40 rounded-8 border-gray fs-14 fw-bold"
+                          style="display: flex;">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.2012 16.5039H16.2358" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path
+                              d="M5.82113 16.6018L7.20992 16.1978C7.95639 15.9803 8.60676 15.5157 9.05334 14.8803L14.3773 7.49771C15.0147 6.62327 14.8223 5.39876 13.9479 4.76139L12.5033 3.70824C11.6291 3.07196 10.4034 3.26439 9.76701 4.13761L4.38462 11.6029C3.97387 12.1879 3.75684 12.8865 3.76282 13.6017L3.77617 15.0815C3.78625 16.1405 4.80449 16.8973 5.82113 16.6018Z"
+                              stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.62598 5.73438L13.2273 9.11566" stroke="#9098AE" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <script xmlns="" />
+                          </svg>
+                          <p class="mb-0">ویرایش شماره شبا</p>
+                        </button>
+                      </form>
+                        <form data-id="2" class="ms-xl-5 ps-xl-5">
+                      <div class="d-flex align-items-center gap-xl-4 gap-3 flex-wrap">
+                        <div class="flex-grow-1 max-w-424">
+                          <label class="fw-bold text-main fs-14">شماره شبا</label>
+                          <input value="IR - 3005 6061 1828 0051 2879 5601"
+                            class="text-blue90 w-100 text-start px-10 rounded-8 mt-2 h-40 border-gray input d-block outline-none fs-14">
+                        </div>
+                        <div class="flex-grow-1">
+                          <label class="fw-bold text-main fs-14">نام و نام خانوادگی صاحب حساب</label>
+                          <input value="علی بنی اسدی"
+                            class="text-blue90 w-100 px-10 rounded-8 mt-2 h-40 border-gray input d-block outline-none fs-14">
+                        </div>
+                        <div class="flex-grow-1">
+                          <label class="fw-bold text-main fs-14">بانک</label>
+                          <div class="d-flex align-items-center gap-2 border-gray rounded-8 fs-14 mt-2 h-40 px-10">
+                            <img alt="img" src="images/Shahr - Logo.png" class="flex-shrink-0 w-24 h-24 d-block">
+                            <input value="شهر" class="border-0 outline-none text-blue90 w-100 flex-grow-1">
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        class="bg-white btnhover3 d-flex align-items-center justify-content-center text-blue80 gap-1 mt-4 w-158 h-40 rounded-8 border-gray fs-14 fw-bold"
+                        style="display: flex;">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.2012 16.5039H16.2358" stroke="#9098AE" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M5.82113 16.6018L7.20992 16.1978C7.95639 15.9803 8.60676 15.5157 9.05334 14.8803L14.3773 7.49771C15.0147 6.62327 14.8223 5.39876 13.9479 4.76139L12.5033 3.70824C11.6291 3.07196 10.4034 3.26439 9.76701 4.13761L4.38462 11.6029C3.97387 12.1879 3.75684 12.8865 3.76282 13.6017L3.77617 15.0815C3.78625 16.1405 4.80449 16.8973 5.82113 16.6018Z"
+                            stroke="#9098AE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M8.62598 5.73438L13.2273 9.11566" stroke="#9098AE" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <script xmlns="" />
+                        </svg>
+                        <p class="mb-0">ویرایش شماره شبا</p>
+                      </button>
+                    </form>
+                    </div>
+                  </div>
                 </div>
                 <div class="mt-36">
                   <div>
@@ -1059,7 +1151,7 @@
                 </div>
                 <div class="mt-4">
                   <div class="bg-white rounded-16 border-gray-2 p-3 p-xxl-4">
-                    <div class="d-flex align-items-center justify-content-between gap-2">
+                    <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
                       <div class="d-flex align-items-center gap-6 fs-14 fw-bold text-main">
                         <div class="w-32 h-32 rounded-8 d-flex align-items-center justify-content-center bg-gradient-1">
                           <img alt="img" src="images/555555 1.png">
@@ -1067,10 +1159,15 @@
                         <p class="mb-0">ویژه لوکانو</p>
                       </div>
                       <div
-                        class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fw-bold fs-14">
-                        <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
-                        <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
-                        <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                        class="rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-4 text-main fw-bold fs-14">
+                        <div class="d-flex align-items-center gap-1">
+                          <img alt="icon" src="images/icons/Money Bag Dollar.svg" class="flex-shrink-0">
+                          <p class="fs-14 mb-0 text-main">قیمت نقدی</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                          <p class="mb-0">۲,۹۵۰,۰۰۰,۰۰۰</p>
+                          <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                        </div>
                       </div>
                     </div>
                     <div class="mt-4 row mx-0 g-2">
@@ -1088,16 +1185,25 @@
                           </div>
                           <div>
                             <div data-id="1" class="text-center text-main payTime active">
-                              <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                              <p class="fw-bold mb-0">12 ماهه</p>
+                              <div
+                                class="flex-column flex-sm-row d-flex align-items-center flex-wrap justify-content-center gap-sm-4">
+                                <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                                <p class="fw-bold mb-0">12 ماهه</p>
+                              </div>
                             </div>
                             <div data-id="2" class="text-center text-main payTime">
-                              <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                              <p class="fw-bold mb-0">18 ماهه</p>
+                              <div
+                                class="flex-column flex-sm-row d-flex align-items-center flex-wrap justify-content-center gap-sm-4">
+                                <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                                <p class="fw-bold mb-0">18 ماهه</p>
+                              </div>
                             </div>
                             <div data-id="3" class="text-center text-main payTime">
-                              <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
-                              <p class="fw-bold mb-0">24 ماهه</p>
+                              <div
+                                class="flex-column flex-sm-row d-flex align-items-center flex-wrap justify-content-center gap-sm-4">
+                                <p class="fs-14 mb-1">مدت زمان بازپرداخت</p>
+                                <p class="fw-bold mb-0">24 ماهه</p>
+                              </div>
                             </div>
                           </div>
                           <div
@@ -1125,24 +1231,33 @@
                           </div>
                           <div>
                             <div data-id="1" class="text-center text-main payMount active">
-                              <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                              <div class="d-flex align-items-center justify-content-center gap-1">
-                                <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
-                                <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                              <div
+                                class="flex-column flex-sm-row d-flex align-items-center flex-wrap justify-content-center gap-sm-4">
+                                <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                  <p class="fw-bold mb-0">۵۹۰,۰۰۰,۰۰۰</p>
+                                  <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                                </div>
                               </div>
                             </div>
                             <div data-id="2" class="text-center text-main payMount">
-                              <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                              <div class="d-flex align-items-center justify-content-center gap-1">
-                                <p class="fw-bold mb-0">890,000,000</p>
-                                <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                              <div
+                                class="flex-column flex-sm-row d-flex align-items-center flex-wrap justify-content-center gap-sm-4">
+                                <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                  <p class="fw-bold mb-0">890,000,000</p>
+                                  <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                                </div>
                               </div>
                             </div>
                             <div data-id="3" class="text-center text-main payMount">
-                              <p class="fs-14 mb-1">مبلغ تسهیلات</p>
-                              <div class="d-flex align-items-center justify-content-center gap-1">
-                                <p class="fw-bold mb-0">1,200,000,000</p>
-                                <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                              <div
+                                class="flex-column flex-sm-row d-flex align-items-center flex-wrap justify-content-center gap-sm-4">
+                                <p class="fs-14 mb-1">مبلغ تسهیلات</p>
+                                <div class="d-flex align-items-center justify-content-center gap-1">
+                                  <p class="fw-bold mb-0">1,200,000,000</p>
+                                  <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -1173,8 +1288,7 @@
                             <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                           </div>
                         </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                        <div class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2">
                           <p class="mb-0">مبلغ هر قسط:</p>
                           <div class="d-flex align-items-center gap-1">
                             <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
@@ -1196,8 +1310,7 @@
                             <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                           </div>
                         </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                        <div class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2">
                           <p class="mb-0">مبلغ هر قسط:</p>
                           <div class="d-flex align-items-center gap-1">
                             <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
@@ -1219,8 +1332,7 @@
                             <img alt="icon" src="images/icons/.svg" class="flex-shrink-0">
                           </div>
                         </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2 border-b-gray">
+                        <div class="d-flex align-items-center justify-content-between gap-2 fs-14 text-main py-10 px-2">
                           <p class="mb-0">مبلغ هر قسط:</p>
                           <div class="d-flex align-items-center gap-1">
                             <p class="mb-0 fw-bold">۱۱۲,۰۰۰,۰۰۰</p>
@@ -1229,27 +1341,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="mt-4">
-                      <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-                        <div
-                          class="w-sm-100 rounded-8 px-2 py-1 bg-background d-flex align-items-center gap-1 text-main fs-14">
-                          <img alt="icon" src="images/icons/User verify.svg" class="flex-shrink-0">
-                          <p class="mb-0">ضمانت:</p>
-                          <p class="mb-0 fw-bold">ضامن + چک صیادی بنفش</p>
-                        </div>
-                        <a
-                          class="w-sm-100 w-122 h-40 border-brown bg-lightbrown rounded-8 btnhover2 d-flex align-items-center justify-content-center gap-2 fw-bold fs-14 text-main">
-                          <p class="mb-0">درخواست وام</p>
-                          <svg class="flex-shrink-0" width="6" height="10" viewBox="0 0 6 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 9L1 5L5 1" stroke="#0B1A40" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"></path>
-                            <script xmlns=""></script>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
                   </div>
+                  <label class="d-flex align-items-center gap-2 mt-4">
+                    <input type="checkbox" class="form-check-input mt-0">
+                    <p class="mb-0 fw-bold fs-14 text-main">با کلیه <a
+                        class="text-brown text-decoration-underline">شرایط و ضوابط</a> تقاضای وام موافقم.</p>
+                  </label>
                 </div>
                 <div class="d-flex align-items-center justify-content-end gap-2 mt-36 flex-wrap">
                   <div class="d-flex align-items-center gap-3 flex-wrap">
@@ -1262,7 +1359,7 @@
                       </svg>
                       <p class="mb-0">مرحله قبل</p>
                     </button>
-                    <button id="step5-next"
+                    <button data-bs-toggle="modal" data-bs-target="#success" id="step5-next"
                       class="bg-brown btnhover2 d-flex align-items-center justify-content-center text-main gap-12 w-155 h-40 rounded-8 border-gray fs-14 fw-bold">
                       <p class="mb-0">ثبت اطلاعات و ادامه</p>
                       <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1276,13 +1373,15 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/userProfile.js"></script>
   <script src="js/sidebar.js"></script>
   <script src="js/darkmode.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/LoanApplication.js"></script>
 </body>
 
 </html>
