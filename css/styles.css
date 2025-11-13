@@ -303,7 +303,7 @@ a {
 
 /* width */
 .w-7vw {
-    width: 7vw;
+    width: 6vw;
 }
 .w-12vw {
     width: 12vw;
@@ -674,7 +674,9 @@ a {
 .-bottom-36 {
     bottom: -36px;
 }
-
+.-bottom-46 {
+    bottom: -46px;
+}
 .-bottom-96 {
     bottom: -96px;
 }
@@ -1221,7 +1223,7 @@ input[type=number] {
 }
 @media (max-width: 1100px) {
     .w-6w-1100{
-        width: 6vw;
+        width: 5vw;
     }
 }
 @media (max-width: 992px) {

@@ -9,15 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // رویدادهای کلیک برای دکمه‌های مرحله بعد
     document.getElementById('step1-next').addEventListener('click', function () {
-        if (validateStep(1)) {
             moveToStep(2);
-        }
     });
 
     document.getElementById('step2-next').addEventListener('click', function () {
-        if (validateStep(2)) {
             moveToStep(3);
-        }
     });
 
     document.getElementById('step3-next').addEventListener('click', function () {
@@ -26,19 +22,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.getElementById('step4-next').addEventListener('click', function () {
-        if (validateStep(4)) {
             moveToStep(5);
-        }
     });
        document.getElementById('step5-next').addEventListener('click', function () {
-        if (validateStep(5)) {
             moveToStep(6);
-        }
     });
-           document.getElementById('step6-next').addEventListener('click', function () {
-        if (validateStep(6)) {
-            moveToStep(7);
-        }
+    //        document.getElementById('step6-next').addEventListener('click', function () {
+    //         moveToStep(7);
+    // });
+               document.getElementById('step7-next').addEventListener('click', function () {
+            moveToStep(8);
     });
     // رویدادهای کلیک برای دکمه‌های مرحله قبل
     document.getElementById('step2-prev').addEventListener('click', function () {
@@ -56,8 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('step5-prev').addEventListener('click', function () {
         moveToPreviousStep(4);
     });
-      document.getElementById('step6-prev').addEventListener('click', function () {
-        moveToPreviousStep(5);
+    //   document.getElementById('step6-prev').addEventListener('click', function () {
+    //     moveToPreviousStep(5);
+    // });
+       document.getElementById('step7-prev').addEventListener('click', function () {
+        moveToPreviousStep(6);
     });
     // رویدادهای ورودی برای اعتبارسنجی
     document.querySelectorAll('.step1-input').forEach(input => {
