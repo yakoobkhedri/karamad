@@ -362,6 +362,9 @@ a {
 .w-101 {
     width: 101px;
 }
+.w-106 {
+    width: 106px;
+}
 .w-116 {
     width: 116px;
 }
@@ -420,7 +423,9 @@ a {
 .h-26 {
     height: 26px;
 }
-
+.h-31 {
+    height: 31px;
+}
 .h-32 {
     height: 32px !important;
 }
@@ -560,6 +565,9 @@ a {
 }
 
 /* margin */
+.mb-6 {
+    margin-bottom: 6px;
+}
 .mb-8 {
     margin-bottom: 8px;
 }
@@ -982,7 +990,10 @@ input[type=number] {
 .textHover1:hover svg path{
     fill: var(--color-primary);
 }
-
+.btnhover4:hover,.btnhover4.active {
+    background-color: var(--color-primary);
+    color: white;
+}
 /* darkmodetoggle */
 
 .darkmodetoggle {
