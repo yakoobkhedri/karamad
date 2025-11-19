@@ -317,7 +317,9 @@ a {
 .w-18 {
     width: 18px;
 }
-
+.w-20 {
+    width: 20px;
+}
 .w-24 {
     width: 24px;
 }
@@ -438,7 +440,9 @@ a {
 .h-18 {
     height: 18px;
 }
-
+.h-20 {
+    height: 20px;
+}
 .h-24 {
     height: 24px;
 }
@@ -762,6 +766,10 @@ a {
 
 .appearance-none {
     appearance: none;
+}
+/* spinner-border */
+.spinner-border{
+    display: none;
 }
 
 /* border */

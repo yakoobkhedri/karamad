@@ -161,7 +161,44 @@
           </div>
         </div>
         <div class="modal-footer border-0">
-          <button type="button" class="fw-bold btnhover2 fs-14 bg-brown w-100 h-40 border-0 text-main rounded-8">ثبت نهایی</button>
+          <button type="button" class="fw-bold btnhover2 fs-14 bg-brown w-100 h-40 border-0 text-main rounded-8">ثبت
+            نهایی</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- error Modal -->
+  <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-446 mx-auto">
+      <div class="modal-content rounded-16 m-sm-3 m-2">
+        <div class="modal-body py-4">
+          <img alt="icon" src="images/Tick-Square2.PNG" class="mx-auto d-block w-40 h-40">
+          <p class="my-3 text-main fs-20 text-center fw-bold">خطا</p>
+          <div class="text-main text-center">
+            خطای سیستمی
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button data-bs-dismiss="modal" type="button" class="fw-bold btnhover2 fs-14 bg-brown w-80 h-40 mx-auto border-0 text-main rounded-8">بستن</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- success Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-446 mx-auto">
+      <div class="modal-content rounded-16 m-sm-3 m-2">
+        <div class="modal-body py-4">
+          <img alt="icon" src="images/Tick-Square.png" class="mx-auto d-block w-40 h-40">
+          <p class="my-3 text-main fs-20 text-center fw-bold">موفق شدید</p>
+          <div class="text-main text-center">
+            پیام موفقیت آمیز
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button data-bs-dismiss="modal" type="button" class="fw-bold btnhover2 fs-14 bg-brown w-80 h-40 mx-auto border-0 text-main rounded-8">بستن</button>
         </div>
       </div>
     </div>
@@ -446,6 +483,8 @@
         </div>
       </div>
       <div class="h-88-5 h-lg-auto flex-grow-1 overflow-auto px-28 px-xl-12 py-40">
+        <button  data-bs-toggle="modal" data-bs-target="#errorModal" class="bg-brown rounded-8 py-2 px-3 border-0 fw-bold text-main">خطای سیستمی</button>
+        <button  data-bs-toggle="modal" data-bs-target="#successModal" class="bg-brown rounded-8 py-2 px-3 border-0 fw-bold text-main">پیام موفقیت آمیز</button>
         <div class="d-flex align-items-center gap-2 fs-14 mb-3">
           <img alt="icon" src="images/icons/Icon.svg" class="flex-shrink-0">
           <p class="mb-0 fw-bold text-main">حساب کاربری</p>
